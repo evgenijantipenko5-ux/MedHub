@@ -71,3 +71,4 @@ body {
 .placeholder .subject-info h2 { color: var(--text-light); }
 
 .hub-footer { text-align: center; margin-top: 48px; color: var(--text-light); font-size: 13px; }
+.hub-author { margin-top: 4px; font-weight: 600; color: #2c3e8f; }
