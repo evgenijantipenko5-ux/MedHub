@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анатомия — Лекция 2: Клетка</title>
+    <link rel="stylesheet" href="cell-style.css">
+</head>
+<body>
+
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <div class="logo-icon">🫀</div>
+        <h2>Анатомия</h2>
+        <p class="subtitle">Лекция 2 — Клетка</p>
+    </div>
+    <ul>
+        <li><a href="#intro" class="active" onclick="scrollToSection('intro', this)">1. Введение</a></li>
+        <li><a href="#properties" onclick="scrollToSection('properties', this)">2. Свойства клеток</a></li>
+        <li><a href="#size-shape" onclick="scrollToSection('size-shape', this)">3. Размеры и форма</a></li>
+        <li><a href="#cpm" onclick="scrollToSection('cpm', this)">4. ЦПМ</a></li>
+        <li><a href="#nucleus" onclick="scrollToSection('nucleus', this)">5. Ядро</a></li>
+        <li><a href="#organelles-membrane" onclick="scrollToSection('organelles-membrane', this)">6. Мембранные органоиды</a></li>
+        <li><a href="#organelles-nonmembrane" onclick="scrollToSection('organelles-nonmembrane', this)">7. Немембранные органоиды</a></li>
+        <li><a href="#organelles-special" onclick="scrollToSection('organelles-special', this)">8. Органоиды спецназначения</a></li>
+        <li><a href="#inclusions" onclick="scrollToSection('inclusions', this)">9. Включения</a></li>
+        <li><a href="#intercellular" onclick="scrollToSection('intercellular', this)">10. Межклеточное вещество</a></li>
+        <li><a href="#levels" onclick="scrollToSection('levels', this)">11. Уровни организации</a></li>
+        <li><a href="#division" onclick="scrollToSection('division', this)">12. Деление клеток</a></li>
+        <li><a href="#microscope" onclick="scrollToSection('microscope', this)">13. Клетка под микроскопом</a></li>
+        <li><a href="#quiz" onclick="scrollToSection('quiz', this)">14. Проверь себя</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>Слуцкий медицинский колледж</p>
+        <p>Лечебное дело — 2 курс</p>
+    </div>
+</nav>
+
+<main id="content">
+
+    <!-- ===== SECTION 1: INTRO ===== -->
+    <section id="intro" class="section">
+        <h1>Клетка: строение, свойства, функции</h1>
+        <p class="section-subtitle">Преподаватель: Баранова И.А.</p>
+
+        <div class="card definition-card">
+            <div class="card-icon">🔬</div>
+            <h3>Клетка</h3>
+            <p><strong>Элементарная структурно-функциональная единица</strong> живого организма. Была открыта в 1665 году <strong>Робертом Гуком</strong>.</p>
+            <div class="etymology">
+                <span class="etym-label">Этимология:</span> лат. <em>cellula</em> — «маленькая комната». Гук назвал так крошечные камеры, которые увидел в пробке под микроскопом.
+            </div>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">🧬</div>
+            <h3>Цитология</h3>
+            <p>Наука, которая изучает <strong>строение, функции, индивидуальное развитие и эволюцию</strong> клеток.</p>
+            <div class="etymology">
+                <span class="etym-label">Этимология:</span> греч. <em>kytos</em> — «сосуд, клетка» + <em>logos</em> — «учение»
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> Клетка — это минимальная единица жизни. Всё живое состоит из клеток (кроме вирусов, которые не считаются живыми вне клетки).
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: PROPERTIES ===== -->
+    <section id="properties" class="section">
+        <h1>Свойства клеток</h1>
+
+        <div class="properties-grid">
+            <div class="prop-card">
+                <div class="prop-icon">🏗️</div>
+                <h4>Высокоупорядоченное строение</h4>
+                <p>Клетка — сложная система с чёткой организацией на молекулярном уровне.</p>
+            </div>
+            <div class="prop-card">
+                <div class="prop-icon">⚡</div>
+                <h4>Получение энергии</h4>
+                <p>Способность получать энергию извне и использовать её для работы и поддержания функций (АТФ).</p>
+            </div>
+            <div class="prop-card">
+                <div class="prop-icon">🔄</div>
+                <h4>Обмен веществ</h4>
+                <p>Постоянное поступление, превращение и выведение веществ.</p>
+            </div>
+            <div class="prop-card">
+                <div class="prop-icon">📡</div>
+                <h4>Раздражимость</h4>
+                <p>Способность активно реагировать на раздражение (сигналы, изменения среды).</p>
+            </div>
+            <div class="prop-card">
+                <div class="prop-icon">📈</div>
+                <h4>Рост и развитие</h4>
+                <p>Увеличение размеров и дифференцировка — приобретение специфических функций.</p>
+            </div>
+            <div class="prop-card">
+                <div class="prop-icon">🧫</div>
+                <h4>Размножение</h4>
+                <p>Способность к делению — основа роста, регенерации и размножения организмов.</p>
+            </div>
+            <div class="prop-card">
+                <div class="prop-icon">🩹</div>
+                <h4>Регенерация</h4>
+                <p>Способность восстанавливать повреждённые структуры.</p>
+            </div>
+            <div class="prop-card">
+                <div class="prop-icon">🌍</div>
+                <h4>Адаптация</h4>
+                <p>Приспособление к изменяющимся условиям окружающей среды.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: SIZE & SHAPE ===== -->
+    <section id="size-shape" class="section">
+        <h1>Размеры и форма клеток</h1>
+
+        <div class="two-col">
+            <div class="card">
+                <h3>📏 Размеры</h3>
+                <p>От <strong>5 до 180 мкм</strong>.</p>
+                <div class="size-comparison">
+                    <div class="size-item large">
+                        <span class="size-dot" style="width:60px;height:60px;"></span>
+                        <div>
+                            <strong>Яйцеклетка</strong>
+                            <p>до 180 мкм — самая крупная</p>
+                        </div>
+                    </div>
+                    <div class="size-item medium">
+                        <span class="size-dot" style="width:45px;height:45px;"></span>
+                        <div>
+                            <strong>Нервная клетка</strong>
+                            <p>до 120 мкм (с отростками — метры!)</p>
+                        </div>
+                    </div>
+                    <div class="size-item small">
+                        <span class="size-dot" style="width:12px;height:12px;"></span>
+                        <div>
+                            <strong>Лимфоциты</strong>
+                            <p>5–8 мкм — самые мелкие</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>🎨 Форма</h3>
+                <p><strong>Разнообразна</strong>, обусловлена функциями и условиями жизнедеятельности.</p>
+                <div class="shape-examples">
+                    <div class="shape-item">
+                        <div class="shape-circle"></div>
+                        <span>Шаровидная<br>(лимфоцит)</span>
+                    </div>
+                    <div class="shape-item">
+                        <div class="shape-disc"></div>
+                        <span>Дискоидная<br>(эритроцит)</span>
+                    </div>
+                    <div class="shape-item">
+                        <div class="shape-star"></div>
+                        <span>Звёздчатая<br>(нейрон)</span>
+                    </div>
+                    <div class="shape-item">
+                        <div class="shape-elongated"></div>
+                        <span>Волокнистая<br>(мышечная)</span>
+                    </div>
+                    <div class="shape-item">
+                        <div class="shape-cube"></div>
+                        <span>Кубическая<br>(эпителий)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> Форма клетки определяет её функцию. Эритроцит — двояковогнутый диск для максимальной поверхности газообмена, нейрон — звёздчатый для контактов с другими клетками.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: CPIM ===== -->
+    <section id="cpm" class="section">
+        <h1>Цитоплазматическая мембрана (ЦПМ)</h1>
+
+        <p class="section-subtitle">Также называют: клеточная мембрана, плазматическая мембрана, плазмалемма</p>
+
+        <div class="card membra-diagram">
+            <h3>Строение мембраны</h3>
+            <div class="membrane-visual">
+                <div class="glycocalyx">Гликокаликс<br><small>углеводные цепи</small></div>
+                <div class="membrane-layer">
+                    <div class="phospholipid">
+                        <div class="head polar"></div>
+                        <div class="tail"></div>
+                        <div class="head polar"></div>
+                    </div>
+                    <div class="phospholipid">
+                        <div class="head polar"></div>
+                        <div class="tail"></div>
+                        <div class="head polar"></div>
+                    </div>
+                    <div class="phospholipid">
+                        <div class="head polar"></div>
+                        <div class="tail"></div>
+                        <div class="head polar"></div>
+                    </div>
+                    <div class="phospholipid">
+                        <div class="head polar"></div>
+                        <div class="tail"></div>
+                        <div class="head polar"></div>
+                    </div>
+                    <div class="phospholipid">
+                        <div class="head polar"></div>
+                        <div class="tail"></div>
+                        <div class="head polar"></div>
+                    </div>
+                </div>
+                <div class="membrane-legend">
+                    <span class="legend-item"><span class="legend-dot polar-dot"></span> Полярные головки (к среде)</span>
+                    <span class="legend-item"><span class="legend-dot nonpolar-dot"></span> Неполярные хвосты (внутри)</span>
+                </div>
+            </div>
+
+            <div class="membrane-structure-list">
+                <h4>Основа:</h4>
+                <p>Двойной слой фосфолипидов. Молекулы липидов имеют 2 функционально разные части:</p>
+                <ul>
+                    <li><strong>Полярные головки</strong> — заряжены, обращены к внутренней и внешней среде</li>
+                    <li><strong>Неполярные (гидрофобные) хвосты</strong> из жирных кислот — обращены друг к другу</li>
+                </ul>
+
+                <h4>Белки мембраны:</h4>
+                <div class="protein-types">
+                    <div class="protein-card">
+                        <div class="protein-visual integral">
+                            <div class="protein-block"></div>
+                        </div>
+                        <strong>Интегральные</strong>
+                        <p>Пронизывают мембрану насквозь</p>
+                    </div>
+                    <div class="protein-card">
+                        <div class="protein-visual semi">
+                            <div class="protein-block half"></div>
+                        </div>
+                        <strong>Полуинтегральные</strong>
+                        <p>Частично погружены в мембрану</p>
+                    </div>
+                    <div class="protein-card">
+                        <div class="protein-visual peripheral">
+                            <div class="protein-block small"></div>
+                        </div>
+                        <strong>Примембранные</strong>
+                        <p>Расположены на поверхности</p>
+                    </div>
+                </div>
+
+                <h4>Гликокаликс (наружная поверхность):</h4>
+                <p>Углеводные цепи, связанные с белками и липидами. Присутствует у клеток животных.</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top:24px;">Функции ЦПМ</h3>
+        <div class="functions-grid">
+            <div class="func-item">🛡️ Защита содержимого клетки</div>
+            <div class="func-item">🔷 Поддержание формы клетки</div>
+            <div class="func-item">🚛 Транспорт веществ в клетку и из неё</div>
+            <div class="func-item">📡 Приём и передача сигналов</div>
+            <div class="func-item">🔗 Межклеточные контакты</div>
+            <div class="func-item">🧬 Распознавание клеток</div>
+        </div>
+
+        <div class="key-point">
+            <strong>Важно:</strong> Мембрана обладает <strong>избирательной проницаемостью</strong> — пропускает одни вещества и задерживает другие. Это основа жизнедеятельности клетки.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 5: NUCLEUS ===== -->
+    <section id="nucleus" class="section">
+        <h1>Ядро клетки</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">🟣</div>
+            <h3>Функция ядра</h3>
+            <p>Является <strong>центром управления</strong> всеми процессами в клетке. Содержит генетическую информацию (ДНК).</p>
+        </div>
+
+        <div class="nucleus-diagram">
+            <div class="nucleus-visual">
+                <svg viewBox="0 0 300 260" class="nucleus-svg">
+                    <!-- Nuclear envelope -->
+                    <ellipse cx="150" cy="130" rx="130" ry="110" fill="#e8d5f0" stroke="#8e44ad" stroke-width="3"/>
+                    <ellipse cx="150" cy="130" rx="120" ry="100" fill="#f5eaf8" stroke="#8e44ad" stroke-width="1" stroke-dasharray="5,3"/>
+                    
+                    <!-- Pores -->
+                    <circle cx="60" cy="80" r="6" fill="#d4e6f1" stroke="#8e44ad" stroke-width="1.5"/>
+                    <circle cx="240" cy="80" r="6" fill="#d4e6f1" stroke="#8e44ad" stroke-width="1.5"/>
+                    <circle cx="60" cy="180" r="6" fill="#d4e6f1" stroke="#8e44ad" stroke-width="1.5"/>
+                    <circle cx="240" cy="180" r="6" fill="#d4e6f1" stroke="#8e44ad" stroke-width="1.5"/>
+                    <circle cx="150" cy="28" r="6" fill="#d4e6f1" stroke="#8e44ad" stroke-width="1.5"/>
+                    
+                    <!-- Chromatin -->
+                    <path d="M90,70 Q110,90 100,110 Q90,130 110,150" fill="none" stroke="#2c3e50" stroke-width="2.5" opacity="0.6"/>
+                    <path d="M180,50 Q200,70 190,100 Q180,130 200,160" fill="none" stroke="#2c3e50" stroke-width="2.5" opacity="0.6"/>
+                    <path d="M130,170 Q150,190 140,210" fill="none" stroke="#2c3e50" stroke-width="2.5" opacity="0.6"/>
+                    
+                    <!-- Nucleolus -->
+                    <circle cx="150" cy="120" r="30" fill="#9b59b6" stroke="#6c3483" stroke-width="2"/>
+                    <text x="150" y="125" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Ядрышко</text>
+                    
+                    <!-- Labels -->
+                    <text x="30" y="48" font-size="11" fill="#8e44ad" font-weight="600">Поры</text>
+                    <line x1="55" y1="52" x2="60" y2="74" stroke="#8e44ad" stroke-width="1"/>
+                    
+                    <text x="25" y="140" font-size="11" fill="#2c3e50" font-weight="600">Хроматин</text>
+                    <line x1="85" y1="110" x2="90" y2="110" stroke="#2c3e50" stroke-width="1"/>
+                    
+                    <text x="150" y="248" text-anchor="middle" font-size="11" fill="#8e44ad" font-weight="600">Ядерная оболочка (2 мембраны)</text>
+                </svg>
+            </div>
+
+            <div class="nucleus-components">
+                <div class="nuc-card">
+                    <h4>🧬 Хроматин</h4>
+                    <p>Комплекс <strong>ДНК с белками</strong>. В митозе максимально конденсируется и образует <strong>хромосомы</strong> — хорошо видимые и интенсивно окрашиваемые структуры.</p>
+                </div>
+                <div class="nuc-card">
+                    <h4>⚫ Ядрышко</h4>
+                    <p>Округлое тёмноокрашенное тельце. Место образования <strong>рибосом</strong>.</p>
+                </div>
+                <div class="nuc-card">
+                    <h4>💧 Нуклеоплазма</h4>
+                    <p>Жидкая среда ядра (ядерный сок). В ней расположены хроматин и ядрышко.</p>
+                </div>
+                <div class="nuc-card">
+                    <h4>🔲 Ядерная оболочка</h4>
+                    <p>Состоит из <strong>2-х мембран</strong>. Между ними — перинуклеарное пространство. В оболочке имеются отверстия — <strong>поры</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> Ядерная оболочка — <strong>двумембранная</strong> (не одномембранная!). Хроматин в спокойном состоянии, в митозе превращается в хромосомы.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 6: MEMBRANE ORGANELLES ===== -->
+    <section id="organelles-membrane" class="section">
+        <h1>Мембранные органоиды</h1>
+
+        <p>Органоиды общего назначения — встречаются во <strong>всех эукариотических клетках</strong>.</p>
+
+        <div class="membrane-layout">
+            <div class="membrane-table-col">
+                <div class="organelle-table">
+            <div class="org-row header-row">
+                <div class="org-img">Вид</div>
+                <div class="org-name">Органоид</div>
+                <div class="org-structure">Строение</div>
+                <div class="org-function">Функция</div>
+            </div>
+
+            <div class="org-row" data-organelle="eps">
+                <div class="org-img"><img src="images/eps_real.jpg" alt="ЭПС под электронным микроскопом" loading="lazy"><div class="img-caption">ЭПС (электронная микроскопия)</div></div>
+                <div class="org-name">
+                    <h4>ЭПС</h4>
+                    <small>Эндоплазматический ретикулум</small>
+                </div>
+                <div class="org-structure">Каналы, пронизывающие всю цитоплазму, соединяющиеся с перинуклеарным пространством и полостями комплекса Гольджи. Стенки — элементарная мембрана.</div>
+                <div class="org-function">
+                    <strong>Транспорт</strong> и <strong>синтез</strong> различных соединений<br><br>
+                    <span class="badge eps-gran">Гранулярная (шероховатая)</span> — на мембране есть рибосомы<br>
+                    <span class="badge eps-smooth">Агранулярная (гладкая)</span> — без рибосом
+                </div>
+            </div>
+
+            <div class="org-row" data-organelle="golgi">
+                <div class="org-img"><img src="images/golgi_diagram.png" alt="Комплекс Гольджи" loading="lazy"><div class="img-caption">Комплекс Гольджи (диктиосома)</div></div>
+                <div class="org-name">
+                    <h4>Комплекс Гольджи</h4>
+                    <small>Аппарат Гольджи</small>
+                </div>
+                <div class="org-structure">Система плоских мембранных мешочков, сложенных наподобие стопки тарелок (диктиосома). От 1 до сотни диктиосом в клетке. От мешочков отшнуровываются пузырьки.</div>
+                <div class="org-function"><strong>Модификация, накопление и упаковка</strong> веществ. Формирование лизосом, секреторных и транспортных пузырьков.</div>
+            </div>
+
+            <div class="org-row" data-organelle="mito">
+                <div class="org-img"><img src="images/mito_diagram.png" alt="Митохондрия" loading="lazy"><div class="img-caption">Митохондрия (схема разреза)</div></div>
+                <div class="org-name">
+                    <h4>Митохондрии</h4>
+                </div>
+                <div class="org-structure">Мешочки округлой или вытянутой формы. Две мембраны: наружная гладкая, внутренняя имеет <strong>впячивания — кристы</strong>. Полость заполнена <strong>матриксом</strong> (ферменты, рибосомы, ДНК, РНК).</div>
+                <div class="org-function"><strong>Энергообразование</strong> — синтез АТФ (сопряжённое окисление). «Энергетическая станция» клетки.</div>
+            </div>
+
+            <div class="org-row" data-organelle="lyso">
+                <div class="org-img"><img src="images/lyso_diagram.png" alt="Лизосома" loading="lazy"><div class="img-caption">Лизосома</div></div>
+                <div class="org-name">
+                    <h4>Лизосомы</h4>
+                </div>
+                <div class="org-structure">Мешочки с мембранной стенкой. Внутри — <strong>гидролитические ферменты</strong>. Перви́чные образуются в комплексе Гольджи.</div>
+                <div class="org-function">
+                    <strong>Расщепление</strong> различных соединений.<br>
+                    При слиянии с эндосомами → <strong>фагосомы</strong> (вторичные лизосомы).<br>
+                    Незавершённые → <strong>остаточные тельца</strong>.
+                </div>
+            </div>
+
+            <div class="org-row" data-organelle="peroxi">
+                <div class="org-img"><img src="images/perox_diagram.png" alt="Пероксисома" loading="lazy"><div class="img-caption">Пероксисома</div></div>
+                <div class="org-name">
+                    <h4>Пероксисомы</h4>
+                </div>
+                <div class="org-structure">Округлые мешочки с мембранной стенкой. Внутри — ферменты.</div>
+                <div class="org-function"><strong>Расщепление</strong> соединений с использованием <strong>активного O₂</strong>. Обезвреживание перекиси водорода.</div>
+            </div>
+
+            <div class="org-row" data-organelle="transport">
+                <div class="org-img">
+                    <svg viewBox="0 0 160 110" class="vesicle-svg">
+                        <ellipse cx="80" cy="55" rx="42" ry="30" fill="none" stroke="#3b5fc0" stroke-width="2.5"/>
+                        <path d="M110,35 Q135,30 145,15" fill="none" stroke="#3b5fc0" stroke-width="2.5" stroke-dasharray="5,3"/>
+                        <path d="M133,20 Q128,28 122,32" fill="none" stroke="#3b5fc0" stroke-width="2" stroke-dasharray="3,2"/>
+                        <circle cx="92" cy="45" r="3" fill="#e74c3c" opacity="0.7"/>
+                        <circle cx="70" cy="62" r="4" fill="#e74c3c" opacity="0.7"/>
+                        <circle cx="85" cy="68" r="2.5" fill="#e74c3c" opacity="0.7"/>
+                        <text x="30" y="100" font-size="11" fill="#7f8c8d">пузырёк (везикула)</text>
+                        <text x="86" y="100" font-size="11" fill="#7f8c8d">отшнуровался от мембраны</text>
+                    </svg>
+                    <div class="img-caption">Транспортный пузырёк (схема)</div>
+                </div>
+                <div class="org-name">
+                    <h4>Транспортные пузырьки</h4>
+                </div>
+                <div class="org-structure">Округлые мембранные пузырьки.</div>
+                <div class="org-function">Отшнуровываются от комплекса Гольджи, ЭПС или поверхностной мембраны. <strong>Транспорт</strong> веществ между органоидами и клеткой.</div>
+            </div>
+        </div>
+            </div>
+
+            <div class="membrane-scheme-col">
+                <div class="membrane-scheme card">
+                    <div class="scheme-title">Расположение органоидов в клетке</div>
+                    <svg viewBox="395 15 410 355" class="scheme-svg" role="img" aria-label="Схема эукариотической клетки с органоидами на русском">
+                        <rect x="400" y="20" width="380" height="340" rx="12" fill="none" stroke="#dee2e6" stroke-width="1.5"/>
+                        <text x="590" y="50" text-anchor="middle" font-size="14" fill="#1a1a2e" font-weight="600">Эукариотическая клетка</text>
+                        <rect x="440" y="65" width="300" height="270" rx="40" fill="none" stroke="#adb5bd" stroke-width="1.5"/>
+                        <text x="755" y="85" font-size="10" fill="#6c757d">плазмалемма (ЦПМ)</text>
+                        <ellipse cx="590" cy="175" rx="55" ry="50" fill="none" stroke="#ef5350" stroke-width="2"/>
+                        <text x="590" y="160" text-anchor="middle" font-size="12" fill="#ef5350" font-weight="500">Ядро</text>
+                        <text x="590" y="178" text-anchor="middle" font-size="9" fill="#6c757d">ядерная оболочка</text>
+                        <text x="590" y="195" text-anchor="middle" font-size="9" fill="#6c757d">ядрышко + хроматин</text>
+                        <path d="M 510 100 Q 530 110 520 130 Q 530 150 510 160" fill="none" stroke="#66bb6a" stroke-width="2"/>
+                        <path d="M 500 120 Q 520 130 510 150 Q 520 170 500 180" fill="none" stroke="#66bb6a" stroke-width="2"/>
+                        <text x="475" y="115" font-size="9" fill="#66bb6a">ЭПС</text>
+                        <path d="M 660 230 C 680 220 690 240 670 250 C 680 260 660 270 650 255" fill="none" stroke="#ffca28" stroke-width="2.5"/>
+                        <text x="685" y="245" font-size="9" fill="#ffca28">Гольджи</text>
+                        <ellipse cx="500" cy="270" rx="30" ry="18" fill="none" stroke="#66bb6a" stroke-width="1.5"/>
+                        <text x="500" y="274" text-anchor="middle" font-size="8" fill="#66bb6a">митохондрия</text>
+                        <circle cx="680" cy="150" r="12" fill="none" stroke="#ef5350" stroke-width="1.5"/>
+                        <text x="700" y="140" font-size="9" fill="#ef5350">лизосома</text>
+                        <circle cx="560" cy="240" r="4" fill="#ef5350" opacity="0.6"/>
+                        <circle cx="575" cy="250" r="4" fill="#ef5350" opacity="0.6"/>
+                        <text x="560" y="270" font-size="9" fill="#ef5350">80S рибосомы</text>
+                    </svg>
+                    <p class="scheme-credit">Источник: «Урок 1 — Цитология», рис. 2 (сравнение эукариотической клетки)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="micro-credits">
+            📷 Иллюстрации: Wikimedia Commons — «Rough endoplasmic reticulum» (ТЭМ), «Endoplasmic reticulum — Smart-Servier», «Mitochondrie.svg», «Lysosomes (NIH BioArt)», «Golgi apparatus (standalone)», «Peroxisome.svg». Лицензии CC BY-SA / общественное достояние.
+        </div>
+
+        <div class="key-point">
+            <strong>Важно:</strong> ЭПС бывает двух типов: гранулярная (шероховатая) — с рибосомами и агранулярная (гладкая) — без рибосом. Лизосомы образуются в комплексе Гольджи.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 7: NON-MEMBRANE ORGANELLES ===== -->
+    <section id="organelles-nonmembrane" class="section">
+        <h1>Немембранные органоиды</h1>
+
+        <div class="two-col">
+            <div class="card nm-card">
+                <div class="card-icon">🔵</div>
+                <h3>Рибосомы</h3>
+                <p>Состоят из <strong>2 субъединиц</strong> — малой и большой, построенных из <strong>РНК и белков</strong>.</p>
+                <p>Большая и малая субъединицы соединяются вместе <strong>только на молекуле мРНК</strong> для синтеза белка.</p>
+                <div class="badge">Функция: синтез белка</div>
+            </div>
+
+            <div class="card nm-card">
+                <div class="card-icon">✳️</div>
+                <h3>Клеточный центр</h3>
+                <p>Состоит из <strong>2 центриолей</strong> (расположены под прямым углом друг к другу) и бесструктурной массы вокруг них — <strong>центросферы</strong>.</p>
+                <p>Каждая центриоль — цилиндр из <strong>9 триплетов микротрубочек</strong>.</p>
+                <div class="badge">Функция: образование веретена деления, рост микротрубочек</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 8: SPECIAL ORGANELLES ===== -->
+    <section id="organelles-special" class="section">
+        <h1>Органоиды специального назначения</h1>
+        <p>Присутствуют только в специализированных клетках. Образуются как производные органоидов общего назначения.</p>
+
+        <div class="special-grid">
+            <div class="spec-card">
+                <div class="spec-icon">💪</div>
+                <h4>Миофибриллы</h4>
+                <p>Органеллы <strong>мышечных клеток</strong>, обеспечивающие сокращение.</p>
+                <p>Нитевидная структура, содержит 2 типа филаментов:</p>
+                <ul>
+                    <li><strong>Тонкие</strong> — из актина</li>
+                    <li><strong>Толстые</strong> — из миозина</li>
+                </ul>
+            </div>
+
+            <div class="spec-card">
+                <div class="spec-icon">🧵</div>
+                <h4>Тонофибриллы</h4>
+                <p>Тонкие белковые волокна, обеспечивающие сохранность формы в <strong>эпителиальных клетках</strong>.</p>
+            </div>
+
+            <div class="spec-card">
+                <div class="spec-icon">🕸️</div>
+                <h4>Нейрофибриллы</h4>
+                <p>Микроскопические нити в <strong>нервных клетках</strong> и их отростках. Составляют опорную и дренажную систему нейронов.</p>
+            </div>
+
+            <div class="spec-card">
+                <div class="spec-icon">🪱</div>
+                <h4>Жгутик</h4>
+                <p>Тонкий вырост на поверхности клетки, содержащий <strong>аксонему</strong> — осевую нить из микротрубочек (9+2). Служит для <strong>движения клетки</strong>.</p>
+            </div>
+
+            <div class="spec-card">
+                <div class="spec-icon">〰️</div>
+                <h4>Реснички</h4>
+                <p>Идентичны жгутику по строению, но <strong>короче (до 10 мкм)</strong>. Обеспечивают <strong>движение жидкости</strong> около клеток.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 9: INCLUSIONS ===== -->
+    <section id="inclusions" class="section">
+        <h1>Включения</h1>
+        <p>Необязательные, непостоянные структуры клетки.</p>
+
+        <div class="inclusions-grid">
+            <div class="incl-card">
+                <h4>🍏 Трофические</h4>
+                <p>Запас питательных веществ: <strong>липиды, гликоген</strong></p>
+            </div>
+            <div class="incl-card">
+                <h4>🧴 Секреторные</h4>
+                <p>Секреторные продукты клетки</p>
+            </div>
+            <div class="incl-card">
+                <h4>🗑️ Экскреторные</h4>
+                <p>Отработанные ненужные вещества, хранящиеся внутри клетки</p>
+            </div>
+            <div class="incl-card">
+                <h4>🎨 Пигментные</h4>
+                <p>Гемоглобин, гемосидерин, меланин, липофусцин</p>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Пигментные включения</strong> бывают:<br>
+            • <strong>Экзогенные</strong> — попавшие в клетку извне<br>
+            • <strong>Эндогенные</strong> — образовавшиеся в самой клетке
+        </div>
+    </section>
+
+    <!-- ===== SECTION 10: INTERCELLULAR ===== -->
+    <section id="intercellular" class="section">
+        <h1>Межклеточное вещество</h1>
+        <p>Составная часть соединительной ткани. Выполняет <strong>механическую, опорную, защитную и трофическую</strong> функции.</p>
+
+        <div class="two-col">
+            <div class="card">
+                <h3>🔗 Соединительнотканные волокна</h3>
+                <div class="fiber-types">
+                    <div class="fiber-item">
+                        <span class="fiber-line collagen"></span>
+                        <strong>Коллагеновые</strong> — прочность
+                    </div>
+                    <div class="fiber-item">
+                        <span class="fiber-line elastic"></span>
+                        <strong>Эластические</strong> — эластичность
+                    </div>
+                    <div class="fiber-item">
+                        <span class="fiber-line reticular"></span>
+                        <strong>Ретикулярные</strong> — каркас органов
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>🫧 Аморфное основное вещество</h3>
+                <p>Окружает волокна и клетки. Состоит из <strong>высокополимерных соединений</strong>.</p>
+                <p>От концентрации и состава зависят физические, химические и биологические свойства межклеточного вещества.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 11: LEVELS ===== -->
+    <section id="levels" class="section">
+        <h1>Уровни организации организма человека</h1>
+
+        <div class="levels-tower">
+            <div class="level-item" style="--level-color: #e74c3c;">
+                <div class="level-number">1</div>
+                <div class="level-content">
+                    <h4>Организменный</h4>
+                    <p>Уровень целостного организма</p>
+                </div>
+                <div class="level-science">Анатомия</div>
+            </div>
+            <div class="level-item" style="--level-color: #e67e22;">
+                <div class="level-number">2</div>
+                <div class="level-content">
+                    <h4>Системный</h4>
+                    <p>Уровень систем органов</p>
+                </div>
+                <div class="level-science">Анатомия</div>
+            </div>
+            <div class="level-item" style="--level-color: #f39c12;">
+                <div class="level-number">3</div>
+                <div class="level-content">
+                    <h4>Органный</h4>
+                    <p>Уровень отдельных органов</p>
+                </div>
+                <div class="level-science">Анатомия</div>
+            </div>
+            <div class="level-item" style="--level-color: #27ae60;">
+                <div class="level-number">4</div>
+                <div class="level-content">
+                    <h4>Тканевый</h4>
+                    <p>Уровень тканей</p>
+                </div>
+                <div class="level-science">Гистология</div>
+            </div>
+            <div class="level-item" style="--level-color: #3498db;">
+                <div class="level-number">5</div>
+                <div class="level-content">
+                    <h4>Клеточный</h4>
+                    <p>Уровень клеток</p>
+                </div>
+                <div class="level-science">Цитология</div>
+            </div>
+            <div class="level-item" style="--level-color: #9b59b6;">
+                <div class="level-number">6</div>
+                <div class="level-content">
+                    <h4>Субклеточный</h4>
+                    <p>Уровень молекул и субклеточных структур</p>
+                </div>
+                <div class="level-science">Молекулярная биология</div>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Анатомия</strong> изучает организм на первых трёх уровнях (1–3).<br>
+            <strong>Гистология</strong> — учение о тканях (уровень 4).<br>
+            <strong>Цитология</strong> — наука о клетке (уровень 5).<br>
+            <strong>Молекулярная биология</strong> — молекулярный и субклеточный уровни (6).
+        </div>
+    </section>
+
+    <!-- ===== SECTION 12: DIVISION ===== -->
+    <section id="division" class="section">
+        <h1>Деление клеток</h1>
+
+        <div class="division-types">
+            <div class="div-card amitosis">
+                <div class="div-badge">Прямое</div>
+                <h3>Амитоз</h3>
+                <p>Прямое деление ядра путём <strong>перетяжки</strong> без равномерного распределения хромосом.</p>
+                <p>Часто образуются <strong>двухъядерные клетки</strong>. После амитоза клетки <strong>не способны</strong> к митотическому делению.</p>
+                <div class="where">
+                    <strong>Где:</strong> кожный эпителий, скелетная мускулатура, стареющие и патологические клетки
+                </div>
+            </div>
+
+            <div class="div-card mitosis">
+                <div class="div-badge">Непрямое</div>
+                <h3>Митоз</h3>
+                <p>Непрямое деление клетки — <strong>способ деления соматических клеток</strong>.</p>
+                <p>Равномерное распределение хромосом между дочерними клетками.</p>
+                <div class="where">
+                    <strong>Где:</strong> все соматические клетки организма
+                </div>
+                <div class="mitosis-stages">
+                    <div class="stage">Профаза</div>
+                    <div class="stage">Метафаза</div>
+                    <div class="stage">Анафаза</div>
+                    <div class="stage">Телофаза</div>
+                </div>
+            </div>
+
+            <div class="div-card meiosis">
+                <div class="div-badge special">Половое</div>
+                <h3>Мейоз</h3>
+                <p>Способ деления <strong>половых клеток</strong> (гамет).</p>
+                <p>Два последовательных деления. Хромосомный набор <strong>уменьшается вдвое</strong> (2n → n).</p>
+                <div class="where">
+                    <strong>Где:</strong> образование сперматозоидов и яйцеклеток
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin-top:32px;">Клеточный (жизненный) цикл</h3>
+        <div class="card">
+            <p><strong>Клеточный цикл</strong> — время существования клетки от деления до следующего деления или от деления до гибели.</p>
+            <div class="cycle-diagram">
+                <div class="cycle-phase interphase">
+                    <h4>Интерфаза</h4>
+                    <p>Промежуток жизни клетки между двумя делениями</p>
+                    <div class="sub-phases">
+                        <span>G₁</span><span>S</span><span>G₂</span>
+                    </div>
+                </div>
+                <div class="cycle-arrow">→</div>
+                <div class="cycle-phase mitotic">
+                    <h4>Митоз</h4>
+                    <p>Период деления</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 13: MICROSCOPE ===== -->
+    <section id="microscope" class="section">
+        <h1>Клетка под микроскопом</h1>
+        <p class="section-subtitle">Как реально выглядит клетка и как распознать её структуры на препарате</p>
+
+        <div class="micro-intro card">
+            <p>На реальных препаратах клетка выглядит совсем не так, как на схемах. Здесь — настоящие микрофотографии клеток, снятые с увеличением. Наведи на подписи, чтобы вспомнить, что именно ты видишь.</p>
+            <div class="micro-legend">
+                <span>🔬 Световая микроскопия — видно ядро, мембрану, общие черты</span>
+                <span>⚡ Электронная микроскопия (ТЭМ) — видны органоиды</span>
+            </div>
+        </div>
+
+        <div class="micro-gallery">
+
+            <div class="micro-card">
+                <div class="micro-img-wrap">
+                    <img src="images/onion_cells_lm.jpg" alt="Клетки лука под световым микроскопом" loading="lazy">
+                    <div class="micro-badge">🔬 Цветная микрофотография</div>
+                </div>
+                <div class="micro-body">
+                    <h4>Клетки лука под световым микроскопом</h4>
+                    <p>Классический школьный препарат — эпидермис лука. Хорошо видны <strong>клеточные стенки</strong> (растительная клетка!) и <strong>ядроподобные структуры</strong>.</p>
+                    <div class="micro-dissection">
+                        <strong>Что искать на препарате:</strong>
+                        <ul>
+                            <li><span class="dot c-wall"></span> <strong>Клеточная стенка</strong> — толстые границы между клетками (у животной клетки её нет!)</li>
+                            <li><span class="dot c-nucleus"></span> <strong>Ядро</strong> — более тёмное плотное пятно внутри клетки</li>
+                            <li><span class="dot c-cyto"></span> <strong>Цитоплазма</strong> — светлое пространство вокруг ядра</li>
+                            <li><span class="dot c-vac"></span> <strong>Вакуоли</strong> — крупные светлые области (у растений)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="micro-card">
+                <div class="micro-img-wrap">
+                    <img src="images/onion_skin_lm.jpg" alt="Кожура лука под микроскопом" loading="lazy">
+                    <div class="micro-badge">🔬 Микрофотография</div>
+                </div>
+                <div class="micro-body">
+                    <h4>Кожура лука — мозаика эпителиальных клеток</h4>
+                    <p>Клетки плотно прилегают друг к другу, образуя <strong>пласт эпителия</strong>. Видно, что клетки — это «кирпичики» ткани.</p>
+                    <div class="micro-dissection">
+                        <strong>Что искать на препарате:</strong>
+                        <ul>
+                            <li><span class="dot c-wall"></span> <strong>Границы клеток</strong> — линии между соседними клетками</li>
+                            <li><span class="dot c-nucleus"></span> <strong>Тёмные ядра</strong> — почти в каждой клетке</li>
+                            <li><span class="dot c-gap"></span> <strong>Межклеточные границы</strong> — сетчатый рисунок всего поля зрения</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="micro-card">
+                <div class="micro-img-wrap">
+                    <img src="images/animal_cell_tem.jpg" alt="Животная клетка под электронным микроскопом" loading="lazy">
+                    <div class="micro-badge">⚡ Трансмиссионный электронный микроскоп (ТЭМ)</div>
+                </div>
+                <div class="micro-body">
+                    <h4>Животная клетка — электронная микроскопия</h4>
+                    <p>На ТЭМ видна <strong>внутренняя архитектура</strong>: мембраны, ядро и органоиды. Чёрно-белое изображение — потому что препарат «окрашен» электронами.</p>
+                    <div class="micro-dissection">
+                        <strong>Что искать на препарате:</strong>
+                        <ul>
+                            <li><span class="dot c-nucleus"></span> <strong>Ядро</strong> — крупная центральная структура</li>
+                            <li><span class="dot c-mito"></span> <strong>Митохондрии</strong> — вытянутые структуры с кристами внутри</li>
+                            <li><span class="dot c-golgi"></span> <strong>Стопки мембран</strong> — комплекс Гольджи (диктиосомы)</li>
+                            <li><span class="dot c-er"></span> <strong>Каналы и пузырьки</strong> — ЭПС и транспортные пузырьки</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="micro-card">
+                <div class="micro-img-wrap">
+                    <img src="images/red_blood_cell_tem.jpg" alt="Эритроцит в капилляре под ТЭМ" loading="lazy">
+                    <div class="micro-badge">⚡ Трансмиссионный электронный микроскоп (ТЭМ)</div>
+                </div>
+                <div class="micro-body">
+                    <h4>Клетки — эритроцит в капилляре</h4>
+                    <p>Тканевой срез: <strong>красные кровяные клетки</strong> внутри сосуда. Видно, что зрелый эритроцит <strong>безъядерный</strong> и почти лишён органоидов — максимально освобождён для переноса гемоглобина.</p>
+                    <div class="micro-dissection">
+                        <strong>Что искать на препарате:</strong>
+                        <ul>
+                            <li><span class="dot c-rbc"></span> <strong>Эритроциты</strong> — плотные округлые клетки в просвете капилляра</li>
+                            <li><span class="dot c-memb"></span> <strong>Клеточная мембрана</strong> — тонкая граница каждой клетки</li>
+                            <li><span class="dot c-no-nuc"></span> <strong>Отсутствие ядра</strong> — отличительная черта зрелых эритроцитов</li>
+                            <li><span class="dot c-wall"></span> <strong>Клетки стенки сосуда</strong> — с ядрами в отличие от эритроцитов</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="micro-card">
+                <div class="micro-img-wrap">
+                    <img src="images/cheek_cells_lm.jpg" alt="Клетки слизистой щеки под микроскопом" loading="lazy">
+                    <div class="micro-badge">🔬 Световая микрофотография</div>
+                </div>
+                <div class="micro-body">
+                    <h4>Клетки слизистой оболочки щеки</h4>
+                    <p>Клетки <strong>эпителия полости рта</strong> человека. Отличный пример животной клетки: округлая форма, чёткая мембрана и хорошо заметное ядро.</p>
+                    <div class="micro-dissection">
+                        <strong>Что искать на препарате:</strong>
+                        <ul>
+                            <li><span class="dot c-memb"></span> <strong>ЦПМ</strong> — тонкая граница клетки</li>
+                            <li><span class="dot c-nucleus"></span> <strong>Ядро</strong> — тёмное пятно в центре</li>
+                            <li><span class="dot c-cyto"></span> <strong>Цитоплазма</strong> — светлая среда, органоиды на световом микроскопе почти не видны</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> На световом препарате видны только мембрана, ядро и общая форма клетки. Органоиды (митохондрии, ЭПС, Гольджи) видны только на электронном микроскопе — они в сотни раз тоньше предела разрешения света.
+        </div>
+
+        <div class="micro-credits">
+            📷 Фотографии: Wikimedia Commons (свободные лицензии): «Onion cells light microscope», «Onion skin cells under a microscope», «Anatomy and physiology of animals — animal cell (TEM)», «A red blood cell in a capillary — TEM», «Human cheek cells».
+        </div>
+    </section>
+
+    <!-- ===== SECTION 14: QUIZ ===== -->
+    <section id="quiz" class="section">
+        <h1>Проверь себя</h1>
+        <p class="section-subtitle">29 вопросов из домашнего задания</p>
+
+        <div class="quiz-progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span id="progressText">0 / 29</span>
+        </div>
+
+        <div id="quizContainer"></div>
+
+        <div class="quiz-result" id="quizResult" style="display:none;">
+            <h2 id="resultTitle"></h2>
+            <p id="resultText"></p>
+            <button class="btn-retry" onclick="resetQuiz()">Пройти ещё раз</button>
+        </div>
+
+        <button class="btn-check" id="btnCheck" onclick="checkAllAnswers()">Проверить все ответы</button>
+    </section>
+
+    <div class="nav-buttons">
+        <a href="index.html" class="btn-nav">← Лекция 1: Введение</a>
+        <a href="../index.html" class="btn-nav btn-home">На главную</a>
+    </div>
+
+</main>
+
+<script src="cell-script.js"></script>
+</body>
+</html>

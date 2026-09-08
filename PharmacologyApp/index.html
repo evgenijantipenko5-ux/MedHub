@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фармакология — Введение. Общая рецептура. Твёрдые лекарственные формы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <div class="logo-icon">💊</div>
+        <h2>Фармакология</h2>
+        <p class="subtitle">Лекция 1—2: Введение и общая рецептура</p>
+    </div>
+    <ul>
+        <li><a href="#intro" class="active" onclick="scrollToSection('intro', this)">1. Предмет фармакологии</a></li>
+        <li><a href="#terms" onclick="scrollToSection('terms', this)">2. Основные понятия</a></li>
+        <li><a href="#groups" onclick="scrollToSection('groups', this)">3. Группы лекарств</a></li>
+        <li><a href="#recipe" onclick="scrollToSection('recipe', this)">4. Рецепт</a></li>
+        <li><a href="#structure" onclick="scrollToSection('structure', this)">5. Структура рецепта</a></li>
+        <li><a href="#blanks" onclick="scrollToSection('blanks', this)">6. Формы бланков</a></li>
+        <li><a href="#lf-class" onclick="scrollToSection('lf-class', this)">7. Классификация ЛФ</a></li>
+        <li><a href="#pulvis" onclick="scrollToSection('pulvis', this)">8. Порошки</a></li>
+        <li><a href="#tabulettae" onclick="scrollToSection('tabulettae', this)">9. Таблетки</a></li>
+        <li><a href="#dragees" onclick="scrollToSection('dragees', this)">10. Драже</a></li>
+        <li><a href="#capsulae" onclick="scrollToSection('capsulae', this)">11. Капсулы и гранулы</a></li>
+        <li><a href="#membranes" onclick="scrollToSection('membranes', this)">12. Плёнки и другие</a></li>
+        <li><a href="#quiz" onclick="scrollToSection('quiz', this)">13. Проверь себя</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>Слуцкий медицинский колледж</p>
+        <p>Лечебное дело — 2 курс</p>
+    </div>
+</nav>
+
+<main id="content">
+
+    <!-- ===== SECTION 1: INTRO ===== -->
+    <section id="intro" class="section">
+        <h1>Предмет и задачи фармакологии</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">⚕️</div>
+            <h3>Фармакология</h3>
+            <p>Наука, изучающая действие лекарственных средств на организм человека и способы их применения для <strong>лечения, профилактики и диагностики</strong> заболеваний.</p>
+            <div class="etymology">
+                <span class="etym-label">Этимология:</span> греч. <em>pharmakon</em> — «лекарство» + <em>logos</em> — «учение»
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни цели применения лекарств:</strong> лечение 🏥 · профилактика 🛡️ · диагностика 🔍
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: TERMS ===== -->
+    <section id="terms" class="section">
+        <h1>Основные понятия фармакологии</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">💊</div>
+            <h3>Лекарственное средство (вещество)</h3>
+            <p>Средство, применяемое для <strong>лечения, профилактики или диагностики</strong> заболеваний.</p>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">📦</div>
+            <h3>Лекарственный препарат</h3>
+            <p>Это лекарственное средство <strong>в определённой лекарственной форме</strong>.</p>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">🧪</div>
+            <h3>Лекарственная форма</h3>
+            <p>Удобное для применения состояние, придаваемое лекарственному средству (или растительному сырью), при котором достигается <strong>необходимый лечебный эффект</strong>.</p>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">📖</div>
+            <h3>Государственная фармакопея (ГФ)</h3>
+            <p>Официальный сборник с описанием методов приготовления лекарственных форм и методов контроля качества и активности лекарственных средств и растительного сырья.</p>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни цепочку:</strong> Лекарственное <em>средство</em> → + лекарственная <em>форма</em> → лекарственный <em>препарат</em>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: GROUPS ===== -->
+    <section id="groups" class="section">
+        <h1>Группы лекарственных средств</h1>
+        <p>Все лекарственные средства делятся на группы в зависимости от силы действия и правил учёта.</p>
+
+        <div class="groups-grid">
+            <div class="group-card" style="--gc:#c0392b;">
+                <div class="group-icon">☠️</div>
+                <h3><span class="badge badge-a">Список А</span> Ядовитые</h3>
+                <p>Средства <strong>списка А</strong>, утверждённого Государственной фармакопеей.</p>
+            </div>
+            <div class="group-card" style="--gc:#e67e22;">
+                <div class="group-icon">⚡</div>
+                <h3><span class="badge badge-b">Список Б</span> Сильнодействующие</h3>
+                <p>Средства <strong>списка Б</strong>, утверждённого Государственной фармакопеей.</p>
+            </div>
+            <div class="group-card" style="--gc:#8e44ad;">
+                <div class="group-icon">🚫</div>
+                <h3>Наркотические</h3>
+                <p>Средства, утверждённые <strong>комитетом по контролю за наркотиками</strong> при МЗ РБ.</p>
+            </div>
+            <div class="group-card" style="--gc:#27ae60;">
+                <div class="group-icon">✅</div>
+                <h3>Общего списка</h3>
+                <p>Все остальные лекарственные средства, не вошедшие в специальные списки.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>ВРД и ВСД</h3>
+            <p>Для средств списков <strong>А</strong>, <strong>Б</strong> и <strong>наркотических</strong> устанавливаются:</p>
+            <div class="two-col">
+                <div class="info-chip">ВРД — <strong>высшая разовая доза</strong></div>
+                <div class="info-chip">ВСД — <strong>высшая суточная доза</strong></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📋 Нормативные документы по хранению (МЗ РБ)</h3>
+            <ul class="reg-list">
+                <li><strong>Приказ №149</strong> (19.05.1998) — хранение групп лекарственных средств и изделий медназначения.</li>
+                <li><strong>Постановление №42</strong> (17.04.2015) — хранение и учёт средств списка А.</li>
+                <li><strong>Постановление №51</strong> (28.12.2004) — хранение и учёт наркотических и психотропных средств.</li>
+            </ul>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> список А = ☠️ <em>ядовитые</em>, список Б = ⚡ <em>сильнодействующие</em>. Для А, Б и наркотических — есть ВРД и ВСД.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: RECIPE ===== -->
+    <section id="recipe" class="section">
+        <h1>Рецепт</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">📝</div>
+            <h3>Рецепт</h3>
+            <p>Письменное обращение врача к фармацевту о <strong>приготовлении лекарственной формы</strong> или <strong>выдаче готовой лекарственной формы</strong> с указанием способа её применения.</p>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">💳</div>
+            <h3>Электронный рецепт</h3>
+            <p>Пластиковая карта с информацией о назначенных препаратах. Врач выписывает препарат в электронной амбулаторной карте → информация поступает на сервер аптечной сети → при покупке пациент подносит карту к сканеру, и на экране появляется название препарата, дозировка и количество. Покупка фиксируется в памяти карты.</p>
+        </div>
+
+        <div class="flow-steps">
+            <div class="flow-step"><span class="flow-num">1</span> Врач назначает препарат в электронной карте</div>
+            <div class="flow-step"><span class="flow-num">2</span> Информация уходит на сервер аптечной сети</div>
+            <div class="flow-step"><span class="flow-num">3</span> Пациент подносит карту к сканеру в аптеке</div>
+            <div class="flow-step"><span class="flow-num">4</span> Препарат, дозировка и количество — на экране</div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 5: STRUCTURE ===== -->
+    <section id="structure" class="section">
+        <h1>Структура рецепта</h1>
+        <p>Рецепт состоит из <strong>6 частей</strong>. Нажимай на части рецепта, чтобы изучить их.</p>
+
+        <div class="recipe-interactive">
+            <div class="recipe-card">
+                <div class="recipe-part" data-part="1">
+                    <div class="recipe-part-head">Inscriptio <em>(надпись)</em></div>
+                    <div class="recipe-part-body">
+                        <p>Сведения об учреждении (штамп), дата, ФИО врача и пациента, при необходимости — возраст, адрес, № амбулаторной карты, форма оплаты, № документа о льготах.</p>
+                    </div>
+                </div>
+                <div class="recipe-part" data-part="2">
+                    <div class="recipe-part-head">Praepositio <em>(предложение)</em></div>
+                    <div class="recipe-part-body"></div>
+                </div>
+                <div class="recipe-part script-part" data-part="3">
+                    <div class="recipe-part-head">Designatio materiarum <em>(перечень материалов)</em></div>
+                    <div class="recipe-part-body">
+                        <span class="rx-font">Rp. Pancreatini 0,5</span>
+                        <p>Названия средств на латыни/русском/белорусском, с большой буквы в родительном падеже + дозы. Доза твёрдых ЛС — в граммах (0,1; 0,01; 0,001; 1,0) или ЕД, МЕ.</p>
+                    </div>
+                </div>
+                <div class="recipe-part" data-part="4">
+                    <div class="recipe-part-head">Subscriptio <em>(приписка)</em></div>
+                    <div class="recipe-part-body">
+                        <p>Что сделать с ЛС и сколько выдать: <code>Misce, fiat…</code> (смешай) или <code>Da tales doses numero…</code> (дай таких доз числом).</p>
+                    </div>
+                </div>
+                <div class="recipe-part" data-part="5">
+                    <div class="recipe-part-head">Signatura <em>(обозначение)</em></div>
+                    <div class="recipe-part-body">
+                        <p><code>Signa. (S.)</code> — «обозначь», далее — способ применения.</p>
+                    </div>
+                </div>
+                <div class="recipe-part" data-part="6">
+                    <div class="recipe-part-head">Nomen medici <em>(имя врача)</em></div>
+                    <div class="recipe-part-body">
+                        <p>Подпись врача.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-info" id="recipeInfo">
+                <h3>Нажми на часть рецепта</h3>
+                <p>Слева показан порядок частей рецепта. Каждая часть выполняет свою функцию.</p>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Латинские сокращения:</strong> Rd. = Recipe («возьми») · M., f. = Misce, fiat («смешай, чтобы получилось») · D. t. d. № = Da tales doses numero («дай таких доз числом») · S. = Signa («обозначь»)
+        </div>
+    </section>
+
+    <!-- ===== SECTION 6: BLANKS ===== -->
+    <section id="blanks" class="section">
+        <h1>Формы рецептурных бланков</h1>
+
+        <div class="blanks-grid">
+            <div class="blank-card" style="--bc:#ebf5fb;">
+                <div class="blank-head">
+                    <span class="blank-badge blank-1">Форма 1</span>
+                    <span class="blank-term">За полную стоимость</span>
+                </div>
+                <ul>
+                    <li>Серия и номер, но <strong>не на учёте</strong></li>
+                    <li><strong>1</strong> лекарственное средство (второе — только как растворитель)</li>
+                    <li>Личная печать + подпись врача</li>
+                    <li>Срок действия <strong>2 месяца</strong></li>
+                    <li>Для списка А, спирта, средств на учёте — <strong>30 дней</strong></li>
+                </ul>
+            </div>
+
+            <div class="blank-card" style="--bc:#fdeef0;">
+                <div class="blank-head">
+                    <span class="blank-badge blank-2">Форма 2 <em>розовая</em></span>
+                    <span class="blank-term">Наркотические 💉</span>
+                </div>
+                <ul>
+                    <li>Розовый бланк: серия, номер, водяные знаки, <strong>на учёте</strong></li>
+                    <li>АДРЕС и № амбулаторной карты пациента</li>
+                    <li>Выписывается рукой врача, <strong>1</strong> средство</li>
+                    <li>Количество <strong>цифрами и прописью</strong></li>
+                    <li>Личная + круглая гербовая печать + подпись главврача</li>
+                    <li>Срок действия <strong>15 дней</strong></li>
+                </ul>
+            </div>
+
+            <div class="blank-card" style="--bc:#fef9e7;">
+                <div class="blank-head">
+                    <span class="blank-badge blank-3">Форма 3 <em>жёлтая</em></span>
+                    <span class="blank-term">Психотропные и анаболические</span>
+                </div>
+                <ul>
+                    <li>Жёлтый бланк: серия, номер, водяные знаки, <strong>на учёте</strong></li>
+                    <li><strong>1</strong> средство, количество цифрами и прописью</li>
+                    <li>Личная печать + подпись врача</li>
+                    <li>Срок действия <strong>30 дней</strong></li>
+                </ul>
+            </div>
+
+            <div class="blank-card" style="--bc:#eafaf1;">
+                <div class="blank-head">
+                    <span class="blank-badge blank-free">Льготный</span>
+                    <span class="blank-term">Льготные рецепты</span>
+                </div>
+                <ul>
+                    <li>Из <strong>двух частей</strong>: корешок и рецепт</li>
+                    <li><strong>1</strong> средство, количество цифрами и прописью</li>
+                    <li>Корешок → в поликлинику, рецепт → в аптеку</li>
+                    <li>Срок <strong>2 месяца</strong> (30 дней — список А и пр.; 15 дней — доп. к форме 2; 30 дней — к форме 3)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни цвета и сроки:</strong> 📄 Форма 1 — белая, 2 месяца · 🌸 Форма 2 — <em>розовая</em>, 15 дней · 🌻 Форма 3 — <em>жёлтая</em>, 30 дней · 🧾 Льготный — 2 месяца
+        </div>
+    </section>
+
+    <!-- ===== SECTION 7: LF-CLASS ===== -->
+    <section id="lf-class" class="section">
+        <h1>Классификация лекарственных форм</h1>
+
+        <div class="card">
+            <p>Лекарственные формы бывают:</p>
+            <div class="lf-types">
+                <div class="lf-type"><h3>По способу приготовления</h3>
+                    <span class="lf-chip">Готовые</span>
+                    <span class="lf-chip">Экстемпоральные (в аптеке)</span>
+                </div>
+                <div class="lf-type"><h3>По агрегатному состоянию</h3>
+                    <div class="lf-chip-row">
+                        <span class="lf-chip solid">Твёрдые</span>
+                        <span class="lf-chip">Жидкие</span>
+                        <span class="lf-chip">Для инъекций</span>
+                        <span class="lf-chip">Мягкие</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Твёрдые лекарственные формы</h3>
+            <div class="solid-list">
+                <div class="solid-item" onclick="scrollToSection('pulvis')">Порошки <em>(Pulvis)</em></div>
+                <div class="solid-item" onclick="scrollToSection('tabulettae')">Таблетки <em>(Tabulettae)</em></div>
+                <div class="solid-item" onclick="scrollToSection('dragees')">Драже <em>(Dragees)</em></div>
+                <div class="solid-item" onclick="scrollToSection('capsulae')">Капсулы <em>(Capsulae)</em></div>
+                <div class="solid-item" onclick="scrollToSection('capsulae')">Гранулы <em>(Granulae)</em></div>
+                <div class="solid-item" onclick="scrollToSection('membranes')">Плёнки и пластинки <em>(Membranulae et Lamelae)</em></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 8: PULVIS ===== -->
+    <section id="pulvis" class="section">
+        <h1>Порошки (Pulvis)</h1>
+        <p>Твёрдая лекарственная форма для <strong>внутреннего и наружного</strong> применения из одного или нескольких ЛС, обладающая <strong>сыпучестью</strong>.</p>
+
+        <div class="lf-tabs">
+            <button class="lf-tab active" onclick="showLf('pv-simple')">Простой дозированный</button>
+            <button class="lf-tab" onclick="showLf('pv-complex')">Сложный дозированный</button>
+            <button class="lf-tab" onclick="showLf('pv-simple-non')">Простой недозированный</button>
+            <button class="lf-tab" onclick="showLf('pv-complex-non')">Сложный недозированный</button>
+            <button class="lf-tab" onclick="showLf('pv-plant')">Из растительного сырья</button>
+        </div>
+
+        <div class="lf-display">
+            <div class="lf-schema" id="lfSchema">
+                <p><strong>Схема:</strong> название ЛС и доза → выдача и число доз → сигнатура</p>
+            </div>
+            <div class="lf-example" id="lfExample">
+                <span class="rx-font">Rp.: Pancreatini 0,5</span><br>
+                <span class="rx-font">D. t. d. № 10</span><br>
+                <span class="rx-font">S. По 1 порошку 3 раза в сутки</span>
+            </div>
+        </div>
+
+        <div class="lf-info" id="lfInfo">
+            <h3>Порошок простой дозированный</h3>
+            <p>Одно ЛС, разделён на отдельные дозы.</p>
+            <p class="lf-schema-text"><strong>Схема:</strong> Rp.: название, доза → D. t. d. № → S.</p>
+        </div>
+
+        <div class="key-point">
+            <strong>Классификация порошков:</strong> <em>простые</em> (1 ЛС) / <em>сложные</em> (несколько ЛС) и <em>дозированные</em> (на 1 приём) / <em>недозированные</em>.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 9: TABULETTAE ===== -->
+    <section id="tabulettae" class="section">
+        <h1>Таблетки (Tabulettae)</h1>
+        <p>Твёрдая <strong>дозированная</strong> ЛФ, получаемая <strong>прессованием</strong> ЛС (или смеси со вспомогательными) для внутреннего, наружного, <strong>сублингвального</strong> (под язык) и инъекционного применения.</p>
+
+        <div class="lf-tabs">
+            <button class="lf-tab active" onclick="showLf('tb-1')">Простые (вариант 1)</button>
+            <button class="lf-tab" onclick="showLf('tb-2')">Простые (вариант 2)</button>
+            <button class="lf-tab" onclick="showLf('tb-3')">Простые (вариант 3)</button>
+            <button class="lf-tab" onclick="showLf('tb-comp')">Сложные</button>
+            <button class="lf-tab" onclick="showLf('tb-trade')">С торговым названием</button>
+        </div>
+
+        <div class="lf-display">
+            <div class="lf-example" id="lfExample2">
+                <span class="rx-font">Rp.: Paracetamoli 0,5</span><br>
+                <span class="rx-font">D. t. d. № 10 in tabulettis (tab.)</span><br>
+                <span class="rx-font">S. По 1 таблетке при высокой температуре</span>
+            </div>
+        </div>
+
+        <div class="lf-info" id="lfInfo2">
+            <h3>Таблетки простые — вариант 1</h3>
+            <p>Название ЛС + доза, затем <code>D. t. d. № … in tabulettis</code>.</p>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни 3 варианта простых таблеток:</strong> ① с <code>D. t. d. № … in tabulettis</code> · ② <code>Tabulettas Paracetamoli 0,5</code> + <code>D. t. d. №</code> · ③ <code>Tabulettas Paracetamoli 0,5 №10</code> + <code>D. S.</code>. Сложные — с <code>ana</code>, торговые — в кавычках «Citramonum».
+        </div>
+    </section>
+
+    <!-- ===== SECTION 10: DRAGEES ===== -->
+    <section id="dragees" class="section">
+        <h1>Драже (Dragees)</h1>
+        <p>Твёрдая <strong>дозированная</strong> ЛФ для внутреннего применения, получаемая <strong>наслаиванием</strong> ЛС и вспомогательных средств на <strong>сахарные гранулы</strong>.</p>
+
+        <div class="lf-tabs">
+            <button class="lf-tab active" onclick="showLf('dr-1')">Простые (вариант 1)</button>
+            <button class="lf-tab" onclick="showLf('dr-2')">Простые (вариант 2)</button>
+            <button class="lf-tab" onclick="showLf('dr-trade')">С торговым названием</button>
+        </div>
+
+        <div class="lf-display">
+            <div class="lf-example" id="lfExample3">
+                <span class="rx-font">Rp.: Dragees Mebhydrolini 0,1</span><br>
+                <span class="rx-font">D. t. d. № 20</span><br>
+                <span class="rx-font">S. По 1 драже 1 раз в сутки</span>
+            </div>
+        </div>
+
+        <div class="lf-info" id="lfInfo3">
+            <h3>Драже простые — вариант 1</h3>
+            <p>Лекарственная форма + название + доза, затем <code>D. t. d. №</code>.</p>
+        </div>
+
+        <div class="key-point">
+            <strong>Отличие драже от таблетки:</strong> драже <em>наслаивают</em> на сахарные гранулы 🍬, таблетки <em>прессуют</em>.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 11: CAPSULAE ===== -->
+    <section id="capsulae" class="section">
+        <h1>Капсулы (Capsulae) и Гранулы (Granulae)</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">💊</div>
+            <h3>Капсулы</h3>
+            <p>Твёрдая <strong>дозированная</strong> ЛФ из ЛС, заключённых в <strong>оболочку</strong>. Бывают <em>желатиновые, крахмальные, из полимеров</em>, а также <em>мягкие, твёрдые, с крышечкой</em>.</p>
+        </div>
+
+        <div class="lf-example static">
+            <span class="rx-font">Rp.: Laevomycetini 0,25</span><br>
+            <span class="rx-font">D. t. d. № 20 in capsulis (caps.)</span><br>
+            <span class="rx-font">S. По 1 капсуле 3 раза в сутки до еды</span>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">⛰️</div>
+            <h3>Гранулы</h3>
+            <p>Твёрдая <strong>дозированная или недозированная</strong> ЛФ в виде <strong>крупинок</strong> для внутреннего применения. Дозируют в пакеты или капсулы.</p>
+        </div>
+
+        <div class="two-col">
+            <div class="lf-example static">
+                <p class="example-label">Недозированные</p>
+                <span class="rx-font">Rp.: Granulorum Plantaglucidi 50,0</span><br>
+                <span class="rx-font">D. S. По 1 чайной ложке 3 раза в сутки за 30 минут до еды</span>
+            </div>
+            <div class="lf-example static">
+                <p class="example-label">Дозированные</p>
+                <span class="rx-font">Rp.: Granulorum Acetylcysteini 0,6 № 20</span><br>
+                <span class="rx-font">D. S. По 1 пакетику 2 раза в сутки</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 12: MEMBRANES ===== -->
+    <section id="membranes" class="section">
+        <h1>Плёнки, пластинки и другие твёрдые ЛФ</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">🩹</div>
+            <h3>Плёнки (Membranulae) и пластинки (Lamelae)</h3>
+            <p>Специальные формы, где на <strong>полимерной основе</strong> содержится ЛС. Применяются наружно, крепятся к десне, в глазной практике.</p>
+        </div>
+
+        <div class="two-col">
+            <div class="lf-example static">
+                <p class="example-label">Плёнки</p>
+                <span class="rx-font">Rp.: Membranulas cum Pilocarpini hydrochlorido № 30</span><br>
+                <span class="rx-font">D. S. Закладывать за веко 1 раз в сутки</span>
+            </div>
+            <div class="lf-example static">
+                <p class="example-label">Пластинки</p>
+                <span class="rx-font">Rp.: Lamellas Trinitrolongi 0,001 № 50</span><br>
+                <span class="rx-font">D. S. Наносить на слизистую верхней десны над клыками после еды</span>
+            </div>
+        </div>
+
+        <div class="others-grid">
+            <div class="other-card">
+                <div class="other-icon">🍬</div>
+                <h3>Глоссеты</h3>
+                <p>Небольшие таблетки для <strong>сублингвального</strong> (под язык) и <strong>трансбуккального</strong> (за щёку) применения.</p>
+            </div>
+            <div class="other-card">
+                <div class="other-icon">🫧</div>
+                <h3>Растворимые и жевательные</h3>
+                <p>Шипучие (растворимые) и жевательные таблетки.</p>
+            </div>
+            <div class="other-card">
+                <div class="other-icon">🍭</div>
+                <h3>Карамели</h3>
+                <p>Твёрдая ЛФ по типу <strong>конфет</strong> для лечения заболеваний <strong>слизистой оболочки полости рта</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 13: QUIZ ===== -->
+    <section id="quiz" class="section">
+        <h1>Проверь себя</h1>
+        <p class="section-subtitle">Вопросы по лекции «Введение. Общая рецептура. Твёрдые ЛФ»</p>
+
+        <div class="quiz-progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span id="progressText">0 / 23</span>
+        </div>
+
+        <div id="quizContainer"></div>
+
+        <div class="quiz-result" id="quizResult" style="display:none;">
+            <h2 id="resultTitle"></h2>
+            <p id="resultText"></p>
+            <button class="btn-retry" onclick="resetQuiz()">Пройти ещё раз</button>
+        </div>
+
+        <button class="btn-check" id="btnCheck" onclick="checkAllAnswers()">Проверить все ответы</button>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

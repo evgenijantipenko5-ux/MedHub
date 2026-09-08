@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анатомия — Лекция 1: Введение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <div class="logo-icon">🫀</div>
+        <h2>Анатомия</h2>
+        <p class="subtitle">Лекция 1 — Введение</p>
+    </div>
+    <ul>
+        <li><a href="#intro" class="active" onclick="scrollToSection('intro', this)">1. Анатомия и физиология</a></li>
+        <li><a href="#nomenclature" onclick="scrollToSection('nomenclature', this)">2. Номенклатура</a></li>
+        <li><a href="#body-parts" onclick="scrollToSection('body-parts', this)">3. Части тела</a></li>
+        <li><a href="#planes" onclick="scrollToSection('planes', this)">4. Плоскости</a></li>
+        <li><a href="#axes" onclick="scrollToSection('axes', this)">5. Оси</a></li>
+        <li><a href="#lines" onclick="scrollToSection('lines', this)">6. Линии тела</a></li>
+        <li><a href="#terms" onclick="scrollToSection('terms', this)">7. Термины</a></li>
+        <li><a href="#quiz" onclick="scrollToSection('quiz', this)">8. Проверь себя</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>Слуцкий медицинский колледж</p>
+        <p>Лечебное дело — 2 курс</p>
+    </div>
+</nav>
+
+<main id="content">
+
+    <!-- ===== SECTION 1: INTRO ===== -->
+    <section id="intro" class="section">
+        <h1>Анатомия и физиология: общая характеристика</h1>
+        <p class="section-subtitle">Преподаватель: Баранова И.А.</p>
+
+        <div class="card definition-card">
+            <div class="card-icon">🔬</div>
+            <h3>Анатомия</h3>
+            <p>Наука, которая изучает <strong>форму и строение</strong> отдельных органов, систем и организма в целом.</p>
+            <div class="etymology">
+                <span class="etym-label">Этимология:</span> греч. <em>anatome</em> — «рассечение» (ana — «вверх, снова» + tomē — «рассечение»)
+            </div>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">⚡</div>
+            <h3>Физиология</h3>
+            <p>Наука, изучающая <strong>закономерности функционирования</strong> живых организмов, их отдельных систем, органов, тканей и клеток.</p>
+            <div class="etymology">
+                <span class="etym-label">Этимология:</span> греч. <em>physiologia</em> — «природоведение» (physis — «природа» + logos — «учение»)
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> Анатомия изучает <em>как устроено</em>, физиология — <em>как работает</em>. Одно без другого невозможно.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: NOMENCLATURE ===== -->
+    <section id="nomenclature" class="section">
+        <h1>Анатомическая номенклатура</h1>
+
+        <div class="card">
+            <h3>nomina anatomica</h3>
+            <p><strong>Анатомическая номенклатура</strong> — это система анатомических терминов, принятая во всём мире.</p>
+        </div>
+
+        <div class="two-col">
+            <div class="card">
+                <h3>🌍 Международная</h3>
+                <p>На <strong>латинском</strong> языке. Позволяет учёным разных стран пользоваться едиными обозначениями анатомических объектов.</p>
+                <div class="example">
+                    <code>musculus biceps brachii</code> — двуглавая мышца плеча
+                </div>
+            </div>
+            <div class="card">
+                <h3>🏳 Национальная</h3>
+                <p>Названия на <strong>родном языке</strong> каждой страны. Могут отличаться от международных, но используются в учебной и клинической практике.</p>
+                <div class="example">
+                    <code>двуглавая мышца плеча</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Важно:</strong> Международная номенклатура необходима, чтобы специалисты из разных стран точно понимали друг друга.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: BODY PARTS ===== -->
+    <section id="body-parts" class="section">
+        <h1>Части тела человека</h1>
+
+        <div class="body-diagram-container">
+            <svg viewBox="0 0 400 700" class="body-svg" id="bodyPartsSvg">
+                <!-- Simplified human body outline -->
+                <g transform="translate(200, 30)" fill="none" stroke="#2c3e50" stroke-width="1.5">
+                    <!-- Head -->
+                    <ellipse cx="0" cy="35" rx="32" ry="40" fill="#e8d5b7" class="body-part" data-part="head"/>
+                    <text x="0" y="38" text-anchor="middle" class="svg-label" data-part="head">Голова</text>
+
+                    <!-- Neck -->
+                    <rect x="-12" y="75" width="24" height="25" rx="5" fill="#e8d5b7" class="body-part" data-part="neck"/>
+                    <text x="0" y="92" text-anchor="middle" class="svg-label small" data-part="neck">Шея</text>
+
+                    <!-- Trunk - chest -->
+                    <path d="M-55,100 L55,100 L50,250 L-50,250 Z" fill="#a8d8ea" class="body-part" data-part="chest"/>
+                    <text x="0" y="155" text-anchor="middle" class="svg-label" data-part="chest">Грудь</text>
+
+                    <!-- Trunk - abdomen -->
+                    <path d="M-50,250 L50,250 L45,350 L-45,350 Z" fill="#f9e4b7" class="body-part" data-part="abdomen"/>
+                    <text x="0" y="295" text-anchor="middle" class="svg-label" data-part="abdomen">Живот</text>
+
+                    <!-- Trunk - back label -->
+                    <text x="0" y="410" text-anchor="middle" class="svg-label small" fill="#7f8c8d">Туловище</text>
+
+                    <!-- Left arm -->
+                    <path d="M-55,100 L-75,110 L-105,200 L-110,280 L-95,285 L-85,210 L-65,130" fill="#e8d5b7" class="body-part" data-part="arm"/>
+                    <text x="-100" y="155" text-anchor="middle" class="svg-label small rotate-text" data-part="arm">Верхняя</text>
+                    <text x="-100" y="170" text-anchor="middle" class="svg-label small rotate-text" data-part="arm">конечность</text>
+
+                    <!-- Right arm -->
+                    <path d="M55,100 L75,110 L105,200 L110,280 L95,285 L85,210 L65,130" fill="#e8d5b7" class="body-part" data-part="arm"/>
+                    <text x="100" y="155" text-anchor="middle" class="svg-label small rotate-text" data-part="arm">Верхняя</text>
+                    <text x="100" y="170" text-anchor="middle" class="svg-label small rotate-text" data-part="arm">конечность</text>
+
+                    <!-- Left leg -->
+                    <path d="M-45,350 L-55,450 L-50,570 L-60,650 L-40,655 L-35,575 L-30,455 L-25,355" fill="#e8d5b7" class="body-part" data-part="leg"/>
+                    <text x="-45" y="470" text-anchor="middle" class="svg-label small" data-part="leg">Нижняя</text>
+                    <text x="-45" y="485" text-anchor="middle" class="svg-label small" data-part="leg">конечность</text>
+
+                    <!-- Right leg -->
+                    <path d="M45,350 L55,450 L50,570 L60,650 L40,655 L35,575 L30,455 L25,355" fill="#e8d5b7" class="body-part" data-part="leg"/>
+                    <text x="45" y="470" text-anchor="middle" class="svg-label small" data-part="leg">Нижняя</text>
+                    <text x="45" y="485" text-anchor="middle" class="svg-label small" data-part="leg">конечность</text>
+                </g>
+            </svg>
+
+            <div class="body-parts-info">
+                <div class="info-item" data-highlight="head">
+                    <h4>Голова (caput)</h4>
+                    <p>Включает мозговой и лицевой отделы черепа.</p>
+                </div>
+                <div class="info-item" data-highlight="neck">
+                    <h4>Шея (collum)</h4>
+                    <p>Соединяет голову с туловищем.</p>
+                </div>
+                <div class="info-item" data-highlight="chest">
+                    <h4>Грудь (thorax)</h4>
+                    <p>Верхняя часть туловища. Содержит грудную полость.</p>
+                </div>
+                <div class="info-item" data-highlight="abdomen">
+                    <h4>Живот и таз (abdomen et pelvis)</h4>
+                    <p>Нижняя часть туловища. Брюшная и тазовая полости.</p>
+                </div>
+                <div class="info-item" data-highlight="arm">
+                    <h4>Верхние конечности</h4>
+                    <p>Пояс верхней конечности → плечо → предплечье → кисть.</p>
+                </div>
+                <div class="info-item" data-highlight="leg">
+                    <h4>Нижние конечности</h4>
+                    <p>Пояс нижней конечности → бедро → голень → стопа.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Внутри туловища:</strong> грудная полость, брюшная полость и тазовая полость.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: PLANES ===== -->
+    <section id="planes" class="section">
+        <h1>Плоскости тела человека</h1>
+
+        <p>Для описания положения тела или отдельных органов используют три взаимно перпендикулярные плоскости. Исходное положение: <strong>стоя, руки опущены вдоль туловища, ладони вперёд, большие пальцы кнаружи</strong>.</p>
+
+        <div class="planes-interactive">
+            <div class="plane-tabs">
+                <button class="plane-tab active" onclick="showPlane('sagittal')">Сагиттальная</button>
+                <button class="plane-tab" onclick="showPlane('frontal')">Фронтальная</button>
+                <button class="plane-tab" onclick="showPlane('horizontal')">Горизонтальная</button>
+            </div>
+
+            <div class="plane-display">
+                <svg viewBox="0 0 500 450" class="planes-svg" id="planesSvg">
+                    <!-- 3D-ish body representation -->
+                    <!-- Grid floor -->
+                    <g opacity="0.15">
+                        <line x1="100" y1="400" x2="400" y2="400" stroke="#666"/>
+                        <line x1="120" y1="380" x2="380" y2="380" stroke="#666"/>
+                    </g>
+
+                    <!-- Human body silhouette (front view) -->
+                    <g transform="translate(250, 50)" id="bodySilhouette">
+                        <!-- Head -->
+                        <ellipse cx="0" cy="30" rx="28" ry="35" fill="#d4e6f1" stroke="#2c3e50" stroke-width="1.5"/>
+                        <!-- Neck -->
+                        <rect x="-10" y="65" width="20" height="20" rx="4" fill="#d4e6f1" stroke="#2c3e50" stroke-width="1.5"/>
+                        <!-- Torso -->
+                        <path d="M-45,85 L45,85 L40,220 L-40,220 Z" fill="#d4e6f1" stroke="#2c3e50" stroke-width="1.5"/>
+                        <!-- Arms -->
+                        <path d="M-45,85 L-60,95 L-80,180 L-85,250 L-72,252 L-65,185 L-50,100" fill="#d4e6f1" stroke="#2c3e50" stroke-width="1.5"/>
+                        <path d="M45,85 L60,95 L80,180 L85,250 L72,252 L65,185 L50,100" fill="#d4e6f1" stroke="#2c3e50" stroke-width="1.5"/>
+                        <!-- Legs -->
+                        <path d="M-40,220 L-45,320 L-50,400 L-38,402 L-32,325 L-25,225" fill="#d4e6f1" stroke="#2c3e50" stroke-width="1.5"/>
+                        <path d="M40,220 L45,320 L50,400 L38,402 L32,325 L25,225" fill="#d4e6f1" stroke="#2c3e50" stroke-width="1.5"/>
+                    </g>
+
+                    <!-- SAGITTAL PLANE -->
+                    <g id="sagittalPlane" class="plane-layer active-plane">
+                        <!-- Plane surface -->
+                        <rect x="248" y="10" width="4" height="430" fill="rgba(231, 76, 60, 0.35)" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="8,4"/>
+                        <!-- Labels -->
+                        <text x="195" y="230" text-anchor="middle" class="plane-label">Dexter</text>
+                        <text x="195" y="248" text-anchor="middle" class="plane-sublabel">(правая)</text>
+                        <text x="305" y="230" text-anchor="middle" class="plane-label">Sinister</text>
+                        <text x="305" y="248" text-anchor="middle" class="plane-sublabel">(левая)</text>
+                        <!-- Arrow -->
+                        <line x1="160" y1="235" x2="245" y2="235" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+                        <line x1="340" y1="235" x2="255" y2="235" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+                    </g>
+
+                    <!-- FRONTAL PLANE -->
+                    <g id="frontalPlane" class="plane-layer">
+                        <!-- Plane surface - horizontal band across body -->
+                        <rect x="180" y="140" width="140" height="5" fill="rgba(46, 204, 113, 0.35)" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="8,4" transform="rotate(-5, 250, 142)"/>
+                        <!-- Extended plane lines to sides -->
+                        <line x1="140" y1="148" x2="360" y2="135" stroke="#27ae60" stroke-width="1" stroke-dasharray="5,3" opacity="0.5"/>
+                        <line x1="140" y1="152" x2="360" y2="139" stroke="#27ae60" stroke-width="1" stroke-dasharray="5,3" opacity="0.5"/>
+                        <!-- Labels -->
+                        <text x="250" y="120" text-anchor="middle" class="plane-label">Anterior</text>
+                        <text x="250" y="108" text-anchor="middle" class="plane-sublabel">(передняя)</text>
+                        <text x="250" y="195" text-anchor="middle" class="plane-label">Posterior</text>
+                        <text x="250" y="210" text-anchor="middle" class="plane-sublabel">(задняя)</text>
+                        <!-- Arrows -->
+                        <line x1="250" y1="85" x2="250" y2="135" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+                        <line x1="250" y1="230" x2="250" y2="160" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+                    </g>
+
+                    <!-- HORIZONTAL PLANE -->
+                    <g id="horizontalPlane" class="plane-layer">
+                        <!-- Ellipse representing horizontal plane -->
+                        <ellipse cx="250" cy="220" rx="70" ry="15" fill="rgba(52, 152, 219, 0.3)" stroke="#3498db" stroke-width="1.5" stroke-dasharray="8,4"/>
+                        <!-- Extended lines -->
+                        <line x1="160" y1="220" x2="340" y2="220" stroke="#3498db" stroke-width="1" stroke-dasharray="5,3" opacity="0.4"/>
+                        <!-- Labels -->
+                        <text x="365" y="200" text-anchor="start" class="plane-label">Superior</text>
+                        <text x="365" y="215" text-anchor="start" class="plane-sublabel">(верхние)</text>
+                        <text x="365" y="240" text-anchor="start" class="plane-label">Inferior</text>
+                        <text x="365" y="255" text-anchor="start" class="plane-sublabel">(нижние)</text>
+                        <!-- Arrows -->
+                        <line x1="355" y1="215" x2="330" y2="218" stroke="#3498db" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+                        <line x1="355" y1="235" x2="330" y2="225" stroke="#3498db" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+                    </g>
+
+                    <!-- Middle (sagittal) indicator -->
+                    <g id="medianIndicator" class="plane-layer" opacity="0.3">
+                        <text x="250" y="445" text-anchor="middle" font-size="11" fill="#888">Срединная (медианная) плоскость</text>
+                    </g>
+
+                    <!-- Arrow markers -->
+                    <defs>
+                        <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                            <path d="M0,0 L8,3 L0,6" fill="#e74c3c"/>
+                        </marker>
+                        <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                            <path d="M0,0 L8,3 L0,6" fill="#27ae60"/>
+                        </marker>
+                        <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                            <path d="M0,0 L8,3 L0,6" fill="#3498db"/>
+                        </marker>
+                    </defs>
+                </svg>
+
+                <div class="plane-description" id="planeDesc">
+                    <h3>Сагиттальная плоскость <em>(plana sagittalis)</em></h3>
+                    <p>Проходит в <strong>переднезаднем</strong> направлении и делит тело на <strong>правую (dexter)</strong> и <strong>левую (sinister)</strong> части.</p>
+                    <p>Сагиттальная плоскость, проходящая через середину тела, называется <strong>срединной (медианной)</strong>.</p>
+                    <div class="mnemonic">💡 Запомни: <strong>Сагиттальная = Стрелка</strong> (стрелка летит вперёд-назад → переднезаднее деление)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 5: AXES ===== -->
+    <section id="axes" class="section">
+        <h1>Оси тела человека</h1>
+
+        <div class="axes-grid">
+            <div class="axis-card" data-axis="vertical">
+                <svg viewBox="0 0 200 300" class="axis-svg">
+                    <g transform="translate(100, 30)">
+                        <ellipse cx="0" cy="20" rx="18" ry="22" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <rect x="-28" y="42" width="56" height="80" rx="3" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <path d="M-28,122 L-32,220 L-26,222 L-18,125" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <path d="M28,122 L32,220 L26,222 L18,125" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <!-- Vertical axis line -->
+                        <line x1="0" y1="-10" x2="0" y2="250" stroke="#e74c3c" stroke-width="2.5" stroke-dasharray="10,5"/>
+                        <circle cx="0" cy="-10" r="4" fill="#e74c3c"/>
+                        <circle cx="0" cy="250" r="4" fill="#e74c3c"/>
+                    </g>
+                </svg>
+                <h3>Вертикальная ось</h3>
+                <p>Направлена <strong>вдоль тела</strong> стоящего человека. По ней располагается позвоночный столб и лежащие вдоль него органы.</p>
+            </div>
+
+            <div class="axis-card" data-axis="frontal">
+                <svg viewBox="0 0 200 300" class="axis-svg">
+                    <g transform="translate(100, 60)">
+                        <ellipse cx="0" cy="20" rx="18" ry="22" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <rect x="-28" y="42" width="56" height="80" rx="3" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <path d="M-28,122 L-32,220 L-26,222 L-18,125" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <path d="M28,122 L32,220 L26,222 L18,125" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <!-- Frontal axis line -->
+                        <line x1="-80" y1="90" x2="80" y2="90" stroke="#27ae60" stroke-width="2.5" stroke-dasharray="10,5"/>
+                        <circle cx="-80" cy="90" r="4" fill="#27ae60"/>
+                        <circle cx="80" cy="90" r="4" fill="#27ae60"/>
+                        <text x="-75" y="82" font-size="10" fill="#27ae60">←</text>
+                        <text x="68" y="82" font-size="10" fill="#27ae60">→</text>
+                    </g>
+                </svg>
+                <h3>Фронтальная (поперечная) ось</h3>
+                <p>Ориентирована <strong>справа налево</strong> или слева направо. Совпадает с фронтальной плоскостью.</p>
+            </div>
+
+            <div class="axis-card" data-axis="sagittal">
+                <svg viewBox="0 0 200 300" class="axis-svg">
+                    <g transform="translate(100, 60)">
+                        <ellipse cx="0" cy="20" rx="18" ry="22" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <rect x="-28" y="42" width="56" height="80" rx="3" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <path d="M-28,122 L-32,220 L-26,222 L-18,125" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <path d="M28,122 L32,220 L26,222 L18,125" fill="#d4e6f1" stroke="#2c3e50"/>
+                        <!-- Sagittal axis (forward-back) - shown as diagonal for 3D effect -->
+                        <line x1="-50" y1="115" x2="50" y2="70" stroke="#3498db" stroke-width="2.5" stroke-dasharray="10,5"/>
+                        <circle cx="-50" cy="115" r="4" fill="#3498db"/>
+                        <circle cx="50" cy="70" r="4" fill="#3498db"/>
+                        <text x="-65" y="125" font-size="10" fill="#3498db">перед</text>
+                        <text x="42" y="65" font-size="10" fill="#3498db">зад</text>
+                    </g>
+                </svg>
+                <h3>Сагиттальная ось</h3>
+                <p>Расположена в <strong>переднезаднем</strong> направлении, как и сагиттальная плоскость.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 6: LINES ===== -->
+    <section id="lines" class="section">
+        <h1>Условные вертикальные линии тела</h1>
+        <p>Для определения проекции границ органов на поверхности тела проводят условные вертикальные линии.</p>
+
+        <div class="lines-container">
+            <svg viewBox="0 0 500 600" class="lines-svg" id="linesSvg">
+                <defs>
+                    <marker id="dot" markerWidth="6" markerHeight="6" refX="3" refY="3">
+                        <circle cx="3" cy="3" r="3" fill="currentColor"/>
+                    </marker>
+                </defs>
+
+                <!-- Body outline - front view -->
+                <g transform="translate(250, 20)" fill="#f0e6d3" stroke="#8b7355" stroke-width="1.5">
+                    <!-- Head -->
+                    <ellipse cx="0" cy="30" rx="30" ry="36"/>
+                    <!-- Neck -->
+                    <rect x="-11" y="66" width="22" height="18" rx="4"/>
+                    <!-- Shoulders/Traps -->
+                    <path d="M-11,84 Q-50,88 -55,100 L-55,100"/>
+                    <path d="M11,84 Q50,88 55,100 L55,100"/>
+                    <!-- Torso -->
+                    <path d="M-55,100 L55,100 L50,280 L-50,280 Z"/>
+                    <!-- Sternum indication -->
+                    <line x1="0" y1="95" x2="0" y2="250" stroke="#c0a888" stroke-width="1" stroke-dasharray="3,3"/>
+                    <!-- Clavicle indications -->
+                    <line x1="-35" y1="100" x2="35" y2="100" stroke="#c0a888" stroke-width="1"/>
+                </g>
+
+                <!-- LINE 1: Передняя срединная (红线 - center) -->
+                <g class="body-line" data-line="anterior-median" onclick="highlightLine('anterior-median')">
+                    <line x1="250" y1="20" x2="250" y2="295" stroke="#e74c3c" stroke-width="2"/>
+                    <circle cx="250" cy="18" r="3" fill="#e74c3c"/>
+                    <text x="250" y="310" text-anchor="middle" class="line-label" fill="#e74c3c">Передняя срединная</text>
+                </g>
+
+                <!-- LINE 2: Грудинные (right and left) -->
+                <g class="body-line" data-line="sternal" onclick="highlightLine('sternal')">
+                    <line x1="237" y1="95" x2="237" y2="260" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="6,3"/>
+                    <line x1="263" y1="95" x2="263" y2="260" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="6,3"/>
+                    <text x="285" y="130" text-anchor="start" class="line-label small" fill="#e67e22">Грудинные</text>
+                </g>
+
+                <!-- LINE 3: Среднеключичные -->
+                <g class="body-line" data-line="midclavicular" onclick="highlightLine('midclavicular')">
+                    <line x1="210" y1="100" x2="210" y2="295" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="6,3"/>
+                    <line x1="290" y1="100" x2="290" y2="295" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="6,3"/>
+                    <circle cx="210" cy="100" r="3" fill="#9b59b6"/>
+                    <circle cx="290" cy="100" r="3" fill="#9b59b6"/>
+                    <text x="195" y="115" text-anchor="end" class="line-label small" fill="#9b59b6">Среднеключичные</text>
+                </g>
+
+                <!-- LINE 4: Подмышечные передние -->
+                <g class="body-line" data-line="anterior-axillary" onclick="highlightLine('anterior-axillary')">
+                    <line x1="195" y1="110" x2="195" y2="295" stroke="#3498db" stroke-width="1.2" stroke-dasharray="4,3"/>
+                    <line x1="305" y1="110" x2="305" y2="295" stroke="#3498db" stroke-width="1.2" stroke-dasharray="4,3"/>
+                    <text x="175" y="150" text-anchor="end" class="line-label tiny" fill="#3498db">Передние</text>
+                    <text x="175" y="162" text-anchor="end" class="line-label tiny" fill="#3498db">подмышечные</text>
+                </g>
+
+                <!-- LINE 5: Подмышечные средние -->
+                <g class="body-line" data-line="mid-axillary" onclick="highlightLine('mid-axillary')">
+                    <line x1="185" y1="115" x2="185" y2="295" stroke="#1abc9c" stroke-width="1.2" stroke-dasharray="4,3"/>
+                    <line x1="315" y1="115" x2="315" y2="295" stroke="#1abc9c" stroke-width="1.2" stroke-dasharray="4,3"/>
+                    <text x="330" y="170" text-anchor="start" class="line-label tiny" fill="#1abc9c">Средние</text>
+                    <text x="330" y="182" text-anchor="start" class="line-label tiny" fill="#1abc9c">подмышечные</text>
+                </g>
+
+                <!-- LINE 6: Задние подмышечные -->
+                <g class="body-line" data-line="posterior-axillary" onclick="highlightLine('posterior-axillary')">
+                    <line x1="175" y1="118" x2="175" y2="295" stroke="#2ecc71" stroke-width="1.2" stroke-dasharray="4,3"/>
+                    <line x1="325" y1="118" x2="325" y2="295" stroke="#2ecc71" stroke-width="1.2" stroke-dasharray="4,3"/>
+                    <text x="340" y="140" text-anchor="start" class="line-label tiny" fill="#2ecc71">Задние</text>
+                    <text x="340" y="152" text-anchor="start" class="line-label tiny" fill="#2ecc71">подмышечные</text>
+                </g>
+
+                <!-- LINE 7: Лопаточные -->
+                <g class="body-line" data-line="scapular" onclick="highlightLine('scapular')">
+                    <line x1="200" y1="120" x2="200" y2="295" stroke="#f39c12" stroke-width="1.2" stroke-dasharray="4,3"/>
+                    <line x1="300" y1="120" x2="300" y2="295" stroke="#f39c12" stroke-width="1.2" stroke-dasharray="4,3"/>
+                    <text x="155" y="200" text-anchor="end" class="line-label tiny" fill="#f39c12">Лопаточные</text>
+                </g>
+
+                <!-- LINE 8: Околопозвоночные -->
+                <g class="body-line" data-line="paravertebral" onclick="highlightLine('paravertebral')">
+                    <line x1="235" y1="88" x2="235" y2="290" stroke="#e84393" stroke-width="1" stroke-dasharray="3,3"/>
+                    <line x1="265" y1="88" x2="265" y2="290" stroke="#e84393" stroke-width="1" stroke-dasharray="3,3"/>
+                    <text x="218" y="270" text-anchor="end" class="line-label tiny" fill="#e84393">Около-</text>
+                    <text x="218" y="282" text-anchor="end" class="line-label tiny" fill="#e84393">позвоночные</text>
+                </g>
+
+                <!-- Clavicle markers -->
+                <circle cx="210" cy="100" r="2" fill="#8b7355"/>
+                <circle cx="290" cy="100" r="2" fill="#8b7355"/>
+                <text x="210" y="94" text-anchor="middle" font-size="8" fill="#8b7355">ключицы</text>
+                <text x="290" y="94" text-anchor="middle" font-size="8" fill="#8b7355">ключицы</text>
+
+                <!-- Sternum -->
+                <rect x="246" y="100" width="8" height="55" rx="3" fill="#d4c4a8" stroke="#8b7355" stroke-width="0.5"/>
+                <text x="268" y="125" font-size="8" fill="#8b7355">грудина</text>
+            </svg>
+
+            <div class="lines-info" id="lineInfo">
+                <h3>Наведи на линию или нажми</h3>
+                <p>Подсветится нужная линия и появится описание.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 7: TERMS ===== -->
+    <section id="terms" class="section">
+        <h1>Анатомические термины</h1>
+        <p>Для обозначения положения органов и частей тела используют специальную терминологию.</p>
+
+        <div class="terms-grid">
+            <div class="term-card" data-term="medialis">
+                <div class="term-header">
+                    <span class="term-latin">Medialis</span>
+                    <span class="term-ru">Медиальный</span>
+                </div>
+                <p>Серединный — расположенный <strong>ближе к срединной плоскости</strong>.</p>
+                <div class="term-visual">
+                    <div class="term-dot center"></div>
+                    <span>← ближе к центру</span>
+                </div>
+            </div>
+
+            <div class="term-card" data-term="lateralis">
+                <div class="term-header">
+                    <span class="term-latin">Lateralis</span>
+                    <span class="term-ru">Латеральный</span>
+                </div>
+                <p>Боковой — расположенный <strong>дальше от срединной плоскости</strong>.</p>
+                <div class="term-visual">
+                    <div class="term-dot outer"></div>
+                    <span>→ дальше от центра</span>
+                </div>
+            </div>
+
+            <div class="term-card" data-term="internus">
+                <div class="term-header">
+                    <span class="term-latin">Internus</span>
+                    <span class="term-ru">Внутренний</span>
+                </div>
+                <p>Лежащий <strong>внутри полости</strong> тела (или части тела).</p>
+            </div>
+
+            <div class="term-card" data-term="externus">
+                <div class="term-header">
+                    <span class="term-latin">Externus</span>
+                    <span class="term-ru">Наружный</span>
+                </div>
+                <p>Лежащий <strong>вне полости</strong> тела (или части тела).</p>
+            </div>
+
+            <div class="term-card" data-term="profundus">
+                <div class="term-header">
+                    <span class="term-latin">Profundus</span>
+                    <span class="term-ru">Глубокий</span>
+                </div>
+                <p>Расположенный <strong>глубже</strong> по отношению к другому органу.</p>
+            </div>
+
+            <div class="term-card" data-term="superficialis">
+                <div class="term-header">
+                    <span class="term-latin">Superficialis</span>
+                    <span class="term-ru">Поверхностный</span>
+                </div>
+                <p>Расположенный <strong>ближе к поверхности</strong> тела.</p>
+            </div>
+
+            <div class="term-card" data-term="cranialis">
+                <div class="term-header">
+                    <span class="term-latin">Cranialis</span>
+                    <span class="term-ru">Краниальный</span>
+                </div>
+                <p>Обращённый <strong>в сторону головы</strong> (к черепу).</p>
+                <div class="term-visual arrow-up">↑ К голове</div>
+            </div>
+
+            <div class="term-card" data-term="caudalis">
+                <div class="term-header">
+                    <span class="term-latin">Caudalis</span>
+                    <span class="term-ru">Каудальный</span>
+                </div>
+                <p>Обращённый <strong>к тазу</strong> (к хвосту).</p>
+                <div class="term-visual arrow-down">↓ К тазу</div>
+            </div>
+
+            <div class="term-card" data-term="ventralis">
+                <div class="term-header">
+                    <span class="term-latin">Ventralis</span>
+                    <span class="term-ru">Вентральный</span>
+                </div>
+                <p>Брюшной — расположенный <strong>ближе к передней</strong>, брюшной стороне.</p>
+                <div class="term-visual arrow-front">→ Передняя сторона</div>
+            </div>
+
+            <div class="term-card" data-term="dorsalis">
+                <div class="term-header">
+                    <span class="term-latin">Dorsalis</span>
+                    <span class="term-ru">Дорсальный</span>
+                </div>
+                <p>Спинной — расположенный <strong>ближе к задней</strong>, спинной стороне.</p>
+                <div class="term-visual arrow-back">← Задняя сторона</div>
+            </div>
+
+            <div class="term-card highlight-card" data-term="proximalis">
+                <div class="term-header">
+                    <span class="term-latin">Proximalis</span>
+                    <span class="term-ru">Проксимальный</span>
+                </div>
+                <p><strong>Ближе к туловищу</strong> (для конечностей).</p>
+                <div class="term-visual">Рука: плечо ← проксимальнее кисти</div>
+            </div>
+
+            <div class="term-card highlight-card" data-term="distalis">
+                <div class="term-header">
+                    <span class="term-latin">Distalis</span>
+                    <span class="term-ru">Дистальный</span>
+                </div>
+                <p><strong>Отдалённый от туловища</strong> (для конечностей).</p>
+                <div class="term-visual">Рука: кисть ← дистальнее плеча</div>
+            </div>
+
+            <div class="term-card small-card" data-term="apicalis">
+                <div class="term-header">
+                    <span class="term-latin">Apicalis</span>
+                    <span class="term-ru">Апикальный</span>
+                </div>
+                <p>Располагающийся <strong>у вершины</strong>.</p>
+            </div>
+
+            <div class="term-card small-card" data-term="basalis">
+                <div class="term-header">
+                    <span class="term-latin">Basalis</span>
+                    <span class="term-ru">Базальный</span>
+                </div>
+                <p>Располагающийся <strong>у основания</strong>.</p>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Для конечностей:</strong> проксимальный (ближе к туловищу) ↔ дистальный (дальше от туловища).<br>
+            <strong>Для тела:</strong> краниальный (к голове) ↔ каудальный (к тазу).
+        </div>
+    </section>
+
+    <!-- ===== SECTION 8: QUIZ ===== -->
+    <section id="quiz" class="section">
+        <h1>Проверь себя</h1>
+        <p class="section-subtitle">17 вопросов из домашнего задания</p>
+
+        <div class="quiz-progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span id="progressText">0 / 17</span>
+        </div>
+
+        <div id="quizContainer"></div>
+
+        <div class="quiz-result" id="quizResult" style="display:none;">
+            <h2 id="resultTitle"></h2>
+            <p id="resultText"></p>
+            <button class="btn-retry" onclick="resetQuiz()">Пройти ещё раз</button>
+        </div>
+
+        <button class="btn-check" id="btnCheck" onclick="checkAllAnswers()">Проверить все ответы</button>
+    </section>
+
+    <div class="nav-buttons">
+        <a href="cell.html" class="btn-nav">Лекция 2: Клетка →</a>
+        <a href="../index.html" class="btn-nav btn-home">На главную</a>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* ===== MedHub — hub styles ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --primary: #2c3e8f;
+    --accent: #e74c3c;
+    --success: #27ae60;
+    --bg: #f4f6fb;
+    --card-bg: #ffffff;
+    --text: #2c3e50;
+    --text-light: #7f8c8d;
+    --border: #dce1eb;
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+    --shadow-hover: 0 6px 24px rgba(0,0,0,0.14);
+    --radius: 16px;
+}
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6;
+    min-height: 100vh;
+}
+
+.hub-header {
+    background: linear-gradient(135deg, #1a2766, #2c3e8f 60%, #3b5fc0);
+    color: white; text-align: center; padding: 48px 20px 40px;
+}
+.hub-logo { font-size: 52px; margin-bottom: 10px; }
+.hub-header h1 {
+    font-size: 42px; font-weight: 800; letter-spacing: 1px; margin-bottom: 6px;
+}
+.hub-header p { font-size: 14px; opacity: 0.8; }
+
+.hub-main { max-width: 960px; margin: 0 auto; padding: 36px 24px 60px; }
+.hub-subtitle { text-align: center; color: var(--text-light); font-size: 15px; margin-bottom: 32px; }
+
+.subject-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+
+.subject-card {
+    display: flex; gap: 18px; align-items: flex-start;
+    background: var(--card-bg); border-radius: var(--radius); padding: 24px;
+    box-shadow: var(--shadow); border: 1px solid var(--border);
+    text-decoration: none; color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.subject-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+
+.subject-icon {
+    font-size: 38px; width: 64px; height: 64px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 16px;
+}
+.anatomy .subject-icon { background: linear-gradient(135deg, #ebf5fb, #d4efdf); }
+.pharmacology .subject-icon { background: linear-gradient(135deg, #e8f5f0, #d1f0e3); }
+.sdm .subject-icon { background: linear-gradient(135deg, #fbeef4, #f5d8e4); }
+.placeholder .subject-icon { background: linear-gradient(135deg, #f0f1f5, #e4e6ec); opacity: 0.5; }
+
+.subject-info h2 { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+.anatomy .subject-info h2 { color: #2c3e8f; }
+.pharmacology .subject-info h2 { color: #1a6e56; }
+.sdm .subject-info h2 { color: #b2456e; }
+.subject-info p { font-size: 14px; color: var(--text-light); margin-bottom: 10px; }
+
+.subject-meta {
+    display: inline-block; font-size: 12px; font-weight: 600; color: white;
+    background: #2c3e8f; border-radius: 20px; padding: 3px 12px;
+}
+.pharmacology .subject-meta { background: #1a6e56; }
+.sdm .subject-meta { background: #b2456e; }
+
+.placeholder { opacity: 0.55; }
+.placeholder .subject-info h2 { color: var(--text-light); }
+
+.hub-footer { text-align: center; margin-top: 48px; color: var(--text-light); font-size: 13px; }
