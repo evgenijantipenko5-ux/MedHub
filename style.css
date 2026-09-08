@@ -29,6 +29,17 @@ body {
     font-size: 42px; font-weight: 800; letter-spacing: 1px; margin-bottom: 6px;
 }
 .hub-header p { font-size: 14px; opacity: 0.8; }
+.hub-owner {
+    display: inline-block; margin-top: 14px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 30px; padding: 8px 22px;
+    font-size: 16px; font-weight: 700; opacity: 1;
+    letter-spacing: 0.3px;
+}
+.hub-owner::after {
+    content: " ⭐";
+}
 
 .hub-main { max-width: 960px; margin: 0 auto; padding: 36px 24px 60px; }
 .hub-subtitle { text-align: center; color: var(--text-light); font-size: 15px; margin-bottom: 32px; }
