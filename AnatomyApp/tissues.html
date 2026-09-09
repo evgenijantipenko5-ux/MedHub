@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анатомия — Лекция 3: Ткани</title>
+    <link rel="stylesheet" href="tissues-style.css">
+</head>
+<body>
+
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <div class="logo-icon">🫀</div>
+        <h2>Анатомия</h2>
+        <p class="subtitle">Лекция 3 — Ткани: эпителиальная</p>
+    </div>
+    <ul>
+        <li><a href="#basics" class="active" onclick="scrollToSection('basics', this)">1. Основные понятия</a></li>
+        <li><a href="#epithelium" onclick="scrollToSection('epithelium', this)">2. Эпителиальная ткань</a></li>
+        <li><a href="#classification" onclick="scrollToSection('classification', this)">3. Классификация</a></li>
+        <li><a href="#epidermis" onclick="scrollToSection('epidermis', this)">4. Эпидермис</a></li>
+        <li><a href="#glands" onclick="scrollToSection('glands', this)">5. Железы</a></li>
+        <li><a href="#quiz" onclick="scrollToSection('quiz', this)">6. Проверь себя</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>Слуцкий медицинский колледж</p>
+        <p>Лечебное дело — 2 курс</p>
+    </div>
+</nav>
+
+<main id="content">
+
+    <!-- ===== SECTION 1: BASICS ===== -->
+    <section id="basics" class="section">
+        <h1>Основные понятия</h1>
+        <p class="section-subtitle">Преподаватель: Баранова И.А.</p>
+
+        <div class="card definition-card">
+            <div class="card-icon">🔬</div>
+            <h3>Ткань</h3>
+            <p><strong>Система клеток и внеклеточных структур</strong>, объединённых общим происхождением, строением и выполняемыми функциями.</p>
+            <div class="etymology">
+                <span class="etym-label">Наука:</span> <strong>гистология</strong> — изучает строение тканей (греч. <em>histos</em> — «ткань» + <em>logos</em> — «учение»)
+            </div>
+        </div>
+
+        <h3>Четыре вида тканей</h3>
+        <div class="tissues-grid">
+            <div class="tissue-card active">
+                <div class="tissue-icon">🫧</div>
+                <h4>Эпителиальная</h4>
+                <p>Покровные и железистые ткани</p>
+            </div>
+            <div class="tissue-card">
+                <div class="tissue-icon">🦴</div>
+                <h4>Соединительная</h4>
+                <p>Кость, хрящ, кровь, жировая</p>
+            </div>
+            <div class="tissue-card">
+                <div class="tissue-icon">💪</div>
+                <h4>Мышечная</h4>
+                <p>Скелетная, сердечная, гладкая</p>
+            </div>
+            <div class="tissue-card">
+                <div class="tissue-icon">⚡</div>
+                <h4>Нервная</h4>
+                <p>Нейроны и нейроглия</p>
+            </div>
+        </div>
+
+        <h3>Паренхима и строма</h3>
+        <div class="two-col">
+            <div class="card">
+                <h3>Паренхима</h3>
+                <p>Совокупность клеток, обеспечивающих <strong>специфические функции</strong> органа. Основная ткань органа.</p>
+            </div>
+            <div class="card">
+                <h3>Строма</h3>
+                <p>Основа органа — <strong>каркас из соединительной ткани</strong>, поддерживающий паренхиму.</p>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> Каждый орган состоит из различных тканей, которые тесно связаны между собой и обеспечивают выполнение функции данного органа. Соединительная ткань образует строму, а эпителиальная — паренхиму.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: EPITHELIUM ===== -->
+    <section id="epithelium" class="section">
+        <h1>Эпителиальная ткань</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">🫧</div>
+            <h3>Эпителий</h3>
+            <p>Ткань, образующая <strong>покровы тела</strong> и <strong>слизистые оболочки</strong>, а также <strong>железы</strong>. Занимает пограничное положение — на границе внешней и внутренней сред организма.</p>
+        </div>
+
+        <h3>Два типа эпителия</h3>
+        <div class="two-col">
+            <div class="card type-card">
+                <div class="card-icon">🛡️</div>
+                <h3>Покровный (поверхностный)</h3>
+                <p>Покрывает поверхность тела и выстилает слизистые оболочки.</p>
+            </div>
+            <div class="card type-card">
+                <div class="card-icon">💧</div>
+                <h3>Железистый (секреторный)</h3>
+                <p>Образует железы. Специализируется на выработке секрета.</p>
+            </div>
+        </div>
+
+        <h3>Функции эпителиальной ткани</h3>
+        <div class="functions-grid">
+            <div class="func-item">🛡️ Барьерная (разграничительная)</div>
+            <div class="func-item">🔄 Обмен веществ (всасывание, выделение, газообмен)</div>
+            <div class="func-item">🔒 Защитная</div>
+            <div class="func-item">💧 Секреторная</div>
+        </div>
+
+        <h3>Особенности строения</h3>
+        <ul class="feature-list">
+            <li><strong>Пограничное положение</strong> — на границе внешней и внутренней сред организма</li>
+            <li><strong>Плотное прилежание</strong> — клетки образуют сплошные пласты</li>
+            <li><strong>Базальная мембрана</strong> — нижний слой клеток всегда лежит на ней</li>
+            <li><strong>Полярность</strong> — базальный (нижний) и апикальный (верхний) отделы клеток различаются по строению</li>
+            <li><strong>Нет сосудов</strong> — питание осуществляется путём диффузии через базальную мембрану</li>
+            <li><strong>Высокая регенерация</strong> — способность быстро восстанавливаться</li>
+        </ul>
+
+        <div class="card definition-card">
+            <div class="card-icon">📐</div>
+            <h3>Базальная мембрана</h3>
+            <p>Тонкий <strong>бесклеточный слой</strong>, состоящий в основном из белка коллагена. Образуется при взаимодействии эпителия с подлежащей соединительной тканью. <strong>Отделяет</strong> эпителий и служит ему <strong>опорой</strong>.</p>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> Эпителиальная ткань — единственная ткань, которая не имеет собственных кровеносных сосудов. Питание — через базальную мембрану из подлежащей соединительной ткани.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: CLASSIFICATION ===== -->
+    <section id="classification" class="section">
+        <h1>Классификация покровного эпителия</h1>
+        <p class="section-subtitle">Морфологическая — учитывает отношение клеток к базальной мембране и их форму</p>
+
+        <!-- ONE-LAYERED -->
+        <h3>Однослойный эпителий</h3>
+        <p>Все клетки лежат на базальной мембране.</p>
+
+        <div class="card">
+            <h3>Однорядный — клетки одинаковой высоты, ядра на одном уровне</h3>
+            <div class="epithelium-types">
+                <div class="epi-type">
+                    <div class="epi-visual flat">
+                        <div class="epi-cell flat-cell"><div class="nucleus"></div></div>
+                        <div class="epi-cell flat-cell"><div class="nucleus"></div></div>
+                        <div class="epi-cell flat-cell"><div class="nucleus"></div></div>
+                        <div class="epi-cell flat-cell"><div class="nucleus"></div></div>
+                        <div class="epi-cell flat-cell"><div class="nucleus"></div></div>
+                    </div>
+                    <div class="epi-baseline"></div>
+                    <h4>Плоский</h4>
+                    <p>Выстилает кровеносные и лимфатические сосуды (<strong>эндотелий</strong>), полости сердца, серозные оболочки (<strong>мезотелий</strong>), альвеолы лёгких.</p>
+                </div>
+                <div class="epi-type">
+                    <div class="epi-visual cubic">
+                        <div class="epi-cell cubic-cell"><div class="nucleus"></div></div>
+                        <div class="epi-cell cubic-cell"><div class="nucleus"></div></div>
+                        <div class="epi-cell cubic-cell"><div class="nucleus"></div></div>
+                        <div class="epi-cell cubic-cell"><div class="nucleus"></div></div>
+                    </div>
+                    <div class="epi-baseline"></div>
+                    <h4>Кубический</h4>
+                    <p>Желчные протоки, почечные канальцы, фолликулы щитовидной железы.</p>
+                </div>
+                <div class="epi-type">
+                    <div class="epi-visual cylindrical">
+                        <div class="epi-cell cyl-cell"><div class="nucleus cyl-nuc"></div></div>
+                        <div class="epi-cell cyl-cell"><div class="nucleus cyl-nuc"></div></div>
+                        <div class="epi-cell cyl-cell"><div class="nucleus cyl-nuc"></div></div>
+                    </div>
+                    <div class="epi-baseline"></div>
+                    <h4>Цилиндрический (призматический)</h4>
+                    <p>Желудок, кишечник, пищеварительные железы, собирательные трубочки почек.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Многорядный — все клетки контактируют с базальной мембраной, но имеют разную высоту</h3>
+            <p>Ядра располагаются на разных уровнях — «в несколько рядов». Выстилает <strong>воздухоносные пути</strong>.</p>
+            <div class="epi-type">
+                <div class="epi-visual multirow">
+                    <div class="epi-cell multi-cell"><div class="nucleus" style="bottom:2px;"></div></div>
+                    <div class="epi-cell multi-cell"><div class="nucleus" style="bottom:8px;"></div></div>
+                    <div class="epi-cell multi-cell"><div class="nucleus" style="bottom:14px;"></div></div>
+                    <div class="epi-cell multi-cell"><div class="nucleus" style="bottom:5px;"></div></div>
+                    <div class="epi-cell multi-cell"><div class="nucleus" style="bottom:18px;"></div></div>
+                </div>
+                <div class="epi-baseline"></div>
+            </div>
+        </div>
+
+        <!-- MULTI-LAYERED -->
+        <h3>Многослойный эпителий</h3>
+        <p>Несколько слоёв клеток. На базальной мембране располагается только <strong>нижний слой</strong>.</p>
+
+        <div class="two-col">
+            <div class="card">
+                <h3>Неороговевающий</h3>
+                <p>Передний отдел пищеварительной системы (ротовая полость, глотка, пищевод), конечный отдел (анальный отдел прямой кишки), роговица.</p>
+                <div class="badge success">Клетки живые, не ороговевают</div>
+            </div>
+            <div class="card">
+                <h3>Ороговевающий (эпидермис)</h3>
+                <p><strong>Кожа.</strong> Верхние слои клеток превращаются в роговые чешуйки.</p>
+                <div class="badge warning">Клетки отмирают и превращаются в кератин</div>
+            </div>
+        </div>
+
+        <!-- TRANSITIONAL -->
+        <h3>Переходный эпителий</h3>
+        <div class="card definition-card">
+            <div class="card-icon">🔄</div>
+            <h3>Переходный</h3>
+            <p><strong>Мочевой пузырь, мочеточники, почечные лоханки.</strong> Все клетки контактируют с базальной мембраной. В нерастянутом состоянии — как многослойный, в растянутом — как однослойный.</p>
+            <div class="etymology">
+                <span class="etym-label">Факт:</span> Электронная микроскопия показала, что все клетки контактируют с базальной пластинкой, некоторые — узкими ножками. Следовало бы считать однослойным.
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> Однорядный ≠ однослойный. Однорядный — клетки одинаковой высоты (ядра на одном уровне). Многорядный — все клетки на базальной мембране, но разной высоты (ядра на разных уровнях).
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: EPIDERMIS ===== -->
+    <section id="epidermis" class="section">
+        <h1>Слои эпидермиса</h1>
+        <p class="section-subtitle">Многослойный плоский ороговевающий эпителий — 5 слоёв</p>
+
+        <div class="epidermis-layers">
+            <div class="layer" style="--layer-color: #f5f5f5;">
+                <div class="layer-badge">5</div>
+                <div class="layer-content">
+                    <h4>Роговой слой</h4>
+                    <p>Роговые чешуйки, заполненные <strong>кератином</strong>, с пузырьками жира и воздуха. С поверхности слущиваются. <strong>Живых клеток не содержит.</strong></p>
+                </div>
+            </div>
+            <div class="layer" style="--layer-color: #fdebd0;">
+                <div class="layer-badge">4</div>
+                <div class="layer-content">
+                    <h4>Блестящий слой</h4>
+                    <p>Клетки заполнены <strong>элеидином</strong> (кератогиалин превращается в элеидин). Сильно преломляет свет — отсюда название.</p>
+                </div>
+            </div>
+            <div class="layer" style="--layer-color: #d5f5e3;">
+                <div class="layer-badge">3</div>
+                <div class="layer-content">
+                    <h4>Зернистый слой</h4>
+                    <p>Несколько рядов клеток с гранулами <strong>кератогиалина</strong> (предшественник кератина). Клетки <strong>не делятся</strong>.</p>
+                </div>
+            </div>
+            <div class="layer" style="--layer-color: #ebf5fb;">
+                <div class="layer-badge">2</div>
+                <div class="layer-content">
+                    <h4>Шиповатый слой</h4>
+                    <p>Эпителиоциты с <strong>шиповидными выростами</strong> (до 10+ рядов). Ещё делятся. Отростками клетки связаны друг с другом.</p>
+                </div>
+            </div>
+            <div class="layer" style="--layer-color: #f5eef8;">
+                <div class="layer-badge">1</div>
+                <div class="layer-content">
+                    <h4>Базальный слой</h4>
+                    <p>1 ряд <strong>делящихся клеток</strong>. Расположен на базальной мембране. Источник новых клеток.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">🔬</div>
+            <h3>Ороговение</h3>
+            <p>Превращение живых эпителиоцитов в <strong>роговые чешуйки</strong> — механически прочные и химически устойчивые постклеточные структуры. Образуют роговой слой эпидермиса, который обладает <strong>защитными свойствами</strong> и <strong>водонепроницаемостью</strong>.</p>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 5: GLANDS ===== -->
+    <section id="glands" class="section">
+        <h1>Железы</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">💧</div>
+            <h3>Железы</h3>
+            <p>Органы, которые <strong>синтезируют и выделяют</strong> различные вещества (секреты), необходимые для жизнедеятельности организма. Большинство образовано <strong>железистым эпителием</strong>.</p>
+        </div>
+
+        <h3>По количеству клеток</h3>
+        <div class="two-col">
+            <div class="card">
+                <h3>Одноклеточные</h3>
+                <p>Бокаловидные клетки в эпителии кишечника и дыхательных путей — выделяют <strong>слизистый секрет</strong>.</p>
+            </div>
+            <div class="card">
+                <h3>Многоклеточные</h3>
+                <p>Большинство желёз организма.</p>
+            </div>
+        </div>
+
+        <h3>По направлению секреции</h3>
+        <div class="two-col">
+            <div class="card type-card">
+                <div class="card-icon">🔵</div>
+                <h3>Эндокринные</h3>
+                <p>Без выводных протоков. Секрет (гормоны) выделяется в <strong>кровь или лимфу</strong>. Примеры: щитовидная, вилочковая железа.</p>
+            </div>
+            <div class="card type-card">
+                <div class="card-icon">🟢</div>
+                <h3>Экзокринные</h3>
+                <p>С выводными протоками. Выделяют секрет на <strong>поверхность кожи</strong> или в <strong>полости органов</strong>. Примеры: потовые, слюнные, молочные железы.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Строение экзокринной железы</h3>
+            <div class="gland-structure">
+                <div class="gland-part">
+                    <div class="gland-visual secretory"></div>
+                    <h4>Концевой (секреторный) отдел</h4>
+                    <p>Образован железистыми клетками на базальной мембране. <strong>Продуцирует секрет.</strong></p>
+                </div>
+                <div class="gland-arrow">→</div>
+                <div class="gland-part">
+                    <div class="gland-visual duct"></div>
+                    <h4>Выводной проток</h4>
+                    <p>Эпителиальные клетки на базальной мембране. <strong>Обеспечивают связь</strong> концевого отдела с покровным эпителием.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Классификация экзокринных желёз</h3>
+
+        <div class="card">
+            <h3>1. По строению выводных протоков</h3>
+            <div class="two-col" style="margin-top:12px;">
+                <div class="mini-card">
+                    <h4>Простые</h4>
+                    <p>Проток <strong>не ветвится</strong></p>
+                </div>
+                <div class="mini-card">
+                    <h4>Сложные</h4>
+                    <p>Проток <strong>ветвится</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>2. По строению (форме) секреторных отделов</h3>
+            <div class="three-col" style="margin-top:12px;">
+                <div class="mini-card">
+                    <h4>Альвеолярные</h4>
+                    <p>Секреторный отдел в виде <strong>альвеолы</strong> (пузырька)</p>
+                </div>
+                <div class="mini-card">
+                    <h4>Трубчатые</h4>
+                    <p>Секреторный отдел в виде <strong>трубочки</strong></p>
+                </div>
+                <div class="mini-card">
+                    <h4>Альвеолярно-трубчатые</h4>
+                    <p><strong>Смешанная</strong> форма</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>3. По соотношению протоков и секреторных отделов</h3>
+            <div class="two-col" style="margin-top:12px;">
+                <div class="mini-card">
+                    <h4>Неразветвлённые</h4>
+                    <p>В один выводной проток открывается <strong>один</strong> секреторный отдел</p>
+                </div>
+                <div class="mini-card">
+                    <h4>Разветвлённые</h4>
+                    <p>В один выводной проток открывается <strong>несколько</strong> секреторных отделов</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>4. По типу секреции</h3>
+            <div class="secretion-types">
+                <div class="secretion-item">
+                    <div class="secretion-badge merocrine">Мерокриновые</div>
+                    <p>При секреции <strong>целостность клеток не нарушается</strong>. Характерно для большинства желёз.</p>
+                </div>
+                <div class="secretion-item">
+                    <div class="secretion-badge apocrine">Апокриновые</div>
+                    <p>Отторгается <strong>верхушечная часть клеток</strong>.</p>
+                </div>
+                <div class="secretion-item">
+                    <div class="secretion-badge holocrine">Голокриновые</div>
+                    <p>Клетка <strong>полностью разрушается</strong> — всё содержимое превращается в секрет.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>5. По характеру секрета</h3>
+            <div class="four-col" style="margin-top:12px;">
+                <div class="mini-card">
+                    <h4>Белковые</h4>
+                    <p>(серозные)</p>
+                </div>
+                <div class="mini-card">
+                    <h4>Слизистые</h4>
+                    <p>(мукозные)</p>
+                </div>
+                <div class="mini-card">
+                    <h4>Смешанные</h4>
+                    <p>(слизисто-белковые)</p>
+                </div>
+                <div class="mini-card">
+                    <h4>Сальные</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> Эндокринные железы — без протоков, секрет в кровь. Экзокринные — с протоками, секрет наружу. Мерокриновые — клетка цела, апокриновые — отрывается верхушка, голокриновые — клетка гибнет.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 6: QUIZ ===== -->
+    <section id="quiz" class="section">
+        <h1>Проверь себя</h1>
+        <p class="section-subtitle">21 вопрос для повторения по теме «Ткани: эпителиальная ткань»</p>
+
+        <div class="quiz-card">
+            <ol class="quiz-list">
+                <li>Что называют тканью? Какая наука изучает строение тканей?</li>
+                <li>Какие виды тканей выделяют в организме человека?</li>
+                <li>Что называют паренхимой органа?</li>
+                <li>Что называют стромой органа?</li>
+                <li>Перечислите функции эпителиальных тканей.</li>
+                <li>Назовите особенности эпителиальных тканей.</li>
+                <li>Какие два типа эпителия выделяют, чем они различаются?</li>
+                <li>Приведите классификацию покровного эпителия.</li>
+                <li>Охарактеризуйте однослойный, многослойный, переходный эпителий.</li>
+                <li>Какой эпителий называют одно-, многорядным?</li>
+                <li>Какие виды однорядного эпителия выделяют? Охарактеризуйте их.</li>
+                <li>Какие виды многослойного эпителия выделяют, чем они различаются?</li>
+                <li>Что представляют собой железы? Что называют секретом железы?</li>
+                <li>Какую функцию выполняет железистый эпителий?</li>
+                <li>Приведите классификацию желез по количеству образующих их клеток.</li>
+                <li>Приведите классификацию желез по направлению секреции.</li>
+                <li>Какие части выделяют в экзокринной железе, каковы их функции?</li>
+                <li>Приведите классификацию экзокринных желез по строению выводных протоков.</li>
+                <li>Приведите классификацию экзокринных желез по строению секреторных отделов.</li>
+                <li>Приведите классификацию экзокринных желез по типу секреции.</li>
+                <li>Приведите классификацию экзокринных желез по характеру выделяемого секрета.</li>
+            </ol>
+        </div>
+    </section>
+
+</main>
+
+<script>
+function scrollToSection(id, link) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.querySelectorAll('#sidebar ul li a').forEach(a => a.classList.remove('active'));
+    link.classList.add('active');
+}
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.id;
+            document.querySelectorAll('#sidebar ul li a').forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+            });
+        }
+    });
+}, { rootMargin: '-20% 0px -70% 0px' });
+
+document.querySelectorAll('.section').forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
