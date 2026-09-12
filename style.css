@@ -63,12 +63,14 @@ body {
 .anatomy .subject-icon { background: linear-gradient(135deg, #ebf5fb, #d4efdf); }
 .pharmacology .subject-icon { background: linear-gradient(135deg, #e8f5f0, #d1f0e3); }
 .sdm .subject-icon { background: linear-gradient(135deg, #fbeef4, #f5d8e4); }
+.microbiology .subject-icon { background: linear-gradient(135deg, #e4f6ec, #cdecde); }
 .placeholder .subject-icon { background: linear-gradient(135deg, #f0f1f5, #e4e6ec); opacity: 0.5; }
 
 .subject-info h2 { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
 .anatomy .subject-info h2 { color: #2c3e8f; }
 .pharmacology .subject-info h2 { color: #1a6e56; }
 .sdm .subject-info h2 { color: #b2456e; }
+.microbiology .subject-info h2 { color: #1e8e5a; }
 .subject-info p { font-size: 14px; color: var(--text-light); margin-bottom: 10px; }
 
 .subject-meta {
@@ -77,6 +79,7 @@ body {
 }
 .pharmacology .subject-meta { background: #1a6e56; }
 .sdm .subject-meta { background: #b2456e; }
+.microbiology .subject-meta { background: #1e8e5a; }
 
 .placeholder { opacity: 0.55; }
 .placeholder .subject-info h2 { color: var(--text-light); }

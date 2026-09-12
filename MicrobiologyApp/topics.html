@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Микробиология — Выбор лекции</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            background: #f2faf5; color: #2c3e50; min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        .topic-header {
+            background: linear-gradient(135deg, #14603c, #1e8e5a 60%, #3cab7a);
+            color: white; text-align: center; padding: 44px 20px 38px; width: 100%;
+        }
+        .topic-header .back-link {
+            display: inline-block; color: rgba(255,255,255,0.78); text-decoration: none;
+            font-size: 14px; margin-bottom: 16px; transition: color 0.2s;
+        }
+        .topic-header .back-link:hover { color: white; }
+        .topic-header .icon { font-size: 48px; margin-bottom: 10px; }
+        .topic-header h1 { font-size: 36px; font-weight: 800; margin-bottom: 6px; }
+        .topic-header p { font-size: 14px; opacity: 0.88; }
+
+        .topic-main { max-width: 720px; width: 100%; padding: 36px 24px 60px; }
+        .topic-subtitle { text-align: center; color: #7f8c8d; font-size: 15px; margin-bottom: 32px; }
+
+        .lecture-list { display: flex; flex-direction: column; gap: 16px; }
+
+        .lecture-card {
+            display: flex; gap: 20px; align-items: center;
+            background: white; border-radius: 16px; padding: 24px 28px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); border: 1px solid #d9ece2;
+            text-decoration: none; color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .lecture-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(0,0,0,0.14); }
+
+        .lecture-num {
+            font-size: 28px; font-weight: 800; color: white;
+            width: 56px; height: 56px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 14px; background: linear-gradient(135deg, #3cab7a, #1e8e5a);
+        }
+
+        .lecture-info { flex: 1; }
+        .lecture-info h2 { font-size: 20px; font-weight: 700; color: #14603c; margin-bottom: 4px; }
+        .lecture-info p { font-size: 14px; color: #7f8c8d; margin-bottom: 8px; }
+
+        .lecture-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tag {
+            font-size: 12px; font-weight: 600; padding: 3px 10px;
+            border-radius: 12px; background: #e4f6ec; color: #1e8e5a;
+        }
+        .tag.questions { background: #d5f5e3; color: #1e8449; }
+        .tag.topic { background: #e8e8e9; color: #444; }
+
+        .lecture-arrow {
+            font-size: 22px; transition: transform 0.2s; color: #b9d6c8;
+        }
+        .lecture-card:hover .lecture-arrow { transform: translateX(4px); color: #1e8e5a; }
+
+        .footer { text-align: center; margin-top: auto; padding: 24px; color: #7f8c8d; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<header class="topic-header">
+    <a href="../index.html" class="back-link">← Назад к MedHub</a>
+    <div class="icon">🦠</div>
+    <h1>Микробиология</h1>
+    <p>Микробиология и иммунология · Лечебное дело, 2 курс</p>
+</header>
+
+<main class="topic-main">
+    <p class="topic-subtitle">Выбери лекцию. Конспекты и вопросы для повторения уже внутри.</p>
+
+    <div class="lecture-list">
+
+        <a class="lecture-card" href="lecture-1.html">
+            <div class="lecture-num">1</div>
+            <div class="lecture-info">
+                <h2>Инфекция. Инфекционный процесс и иммунитет</h2>
+                <p>Инфекция и её формы; взаимоотношения микро- и макроорганизма; патогенность и вирулентность; стадии заболевания; виды иммунитета; неспецифическая защита, фагоцитоз и иммуноглобулины.</p>
+                <div class="lecture-tags">
+                    <span class="tag">10 разделов</span>
+                    <span class="tag questions">12 вопросов</span>
+                </div>
+            </div>
+            <div class="lecture-arrow">›</div>
+        </a>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <p>MedHub · все конспекты в одном месте</p>
+</footer>
+
+</body>
+</html>
