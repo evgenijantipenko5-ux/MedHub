@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фармакология — Лекция 3: Жидкие лекарственные формы. ЛФ для инъекций</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-to-topics {
+            display: block; color: rgba(255,255,255,0.75); text-decoration: none;
+            font-size: 12px; padding: 12px 20px 0; transition: color 0.2s;
+        }
+        .back-to-topics:hover { color: white; }
+        .sub-h2 { font-size: 20px; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; margin-top: 4px; }
+        .example-col { min-height: 0; }
+    </style>
+</head>
+<body>
+
+<nav id="sidebar">
+    <a href="topics.html" class="back-to-topics">← К выбору лекции</a>
+    <div class="sidebar-header">
+        <div class="logo-icon">💊</div>
+        <h2>Фармакология</h2>
+        <p class="subtitle">Лекция 3: Жидкие ЛФ и ЛФ для инъекций</p>
+    </div>
+    <ul>
+        <li><a href="#solutio" class="active" onclick="scrollToSection('solutio', this)">1. Растворы</a></li>
+        <li><a href="#susp-emulsio" onclick="scrollToSection('susp-emulsio', this)">2. Суспензия и эмульсия</a></li>
+        <li><a href="#infusum" onclick="scrollToSection('infusum', this)">3. Настои и отвары</a></li>
+        <li><a href="#tinctura" onclick="scrollToSection('tinctura', this)">4. Настойки и экстракты</a></li>
+        <li><a href="#other-liquid" onclick="scrollToSection('other-liquid', this)">5. Микстура, сироп, аэрозоль</a></li>
+        <li><a href="#injections" onclick="scrollToSection('injections', this)">6. Формы для инъекций</a></li>
+        <li><a href="#in-ampulla" onclick="scrollToSection('in-ampulla', this)">7. В ампулах</a></li>
+        <li><a href="#in-flacon" onclick="scrollToSection('in-flacon', this)">8. Во флаконах</a></li>
+        <li><a href="#infusion" onclick="scrollToSection('infusion', this)">9. Инфузионные растворы</a></li>
+        <li><a href="#quiz" onclick="scrollToSection('quiz', this)">10. Проверь себя</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>Слуцкий медицинский колледж</p>
+        <p>Лечебное дело — 2 курс</p>
+    </div>
+</nav>
+
+<main id="content">
+
+    <!-- ===== SECTION 1: SOLUTIO ===== -->
+    <section id="solutio" class="section">
+        <h1>Раствор (Solutio, Sol.)</h1>
+        <div class="card definition-card">
+            <div class="card-icon">💧</div>
+            <h3>Раствор</h3>
+            <p>Жидкая лекарственная форма, получаемая путём <strong>растворения лекарственных средств в растворителе</strong>. Предназначен для <strong>внутреннего, наружного и инъекционного</strong> применения.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧴 Растворители</h3>
+            <div class="two-col">
+                <div class="info-chip">Вода очищенная (дистиллированная)</div>
+                <div class="info-chip">Спирт этиловый</div>
+                <div class="info-chip">Растительные и минеральные масла</div>
+                <div class="info-chip">Редко: глицерин, эфир, хлороформ</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📐 Способы выражения концентрации</h3>
+            <ul class="reg-list">
+                <li><strong>Отношение массы к объёму</strong> — <span class="rx-font">4,0 – 200 ml</span></li>
+                <li><strong>В процентах</strong> — <span class="rx-font">2% – 200 ml</span></li>
+                <li><strong>В соотношении</strong> — <span class="rx-font">1 : 500 – 400 ml</span></li>
+            </ul>
+            <div class="mnemonic">Ложкой назначают внутренние растворы объёмом 100 мл и более, каплями — 5–20 мл.</div>
+        </div>
+
+        <div class="card">
+            <h3>🗂 Объёмы выписывания</h3>
+            <div class="two-col">
+                <div class="info-chip">Для внутреннего применения: ложками (100 мл и более) или каплями (5–20 мл)</div>
+                <div class="info-chip">Для наружного: примочки, промывания, полоскания (100 мл и более)</div>
+                <div class="info-chip">Глазные, ушные капли и капли в нос: 5–20 мл</div>
+                <div class="info-chip">При спиртовых и масляных растворах указывается их вид</div>
+            </div>
+            <p style="margin-top:12px;">В рецепте раствор выписывается <strong>развёрнутым</strong> или <strong>сокращённым</strong> способом.</p>
+            <div class="key-point">
+                <strong>Официнальный раствор</strong> — это раствор, имеющий <em>постоянную концентрацию</em>, которая при выписке в рецепте <strong>не указывается</strong>.
+            </div>
+        </div>
+
+        <h3 class="sub-h2">Схемы выписывания</h3>
+        <div class="two-col">
+            <div class="lf-example static example-col">
+                <p class="example-label">а) Водный раствор</p>
+                <div class="lf-schema"><p><strong>Rp.:</strong> лекарственная форма, название ЛС, концентрация, объём</p></div>
+                <span class="rx-font">Rp.: Sol. Natrii bromidi 2% – 200 ml</span><br>
+                <span class="rx-font">D. S. По 1 столовой ложке 3 раза в сутки</span>
+            </div>
+            <div class="lf-example static example-col">
+                <p class="example-label">б) Спиртовой (spirituosa) и масляный (oleosa)</p>
+                <div class="lf-schema"><p><strong>Rp.:</strong> лекарственная форма, название ЛС, <strong>характер раствора</strong>, концентрация, объём</p></div>
+                <span class="rx-font">Rp.: Sol. Acidi borici spirituosae 3% – 10 ml</span><br>
+                <span class="rx-font">D. S. Ушные капли</span>
+                <span class="rx-font">Rp.: Sol. Camphorae oleosae 10% – 50 ml</span><br>
+                <span class="rx-font">D. S. Для растираний</span>
+            </div>
+            <div class="lf-example static example-col">
+                <p class="example-label">в) Официнальный раствор</p>
+                <div class="lf-schema"><p><strong>Rp.:</strong> лекарственная форма, название ЛС, объём</p></div>
+                <span class="rx-font">Rp.: Sol. Hydrogenii peroxydi 500 ml</span><br>
+                <span class="rx-font">D. S. Для промывания ран</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: SUSPENSION & EMULSION ===== -->
+    <section id="susp-emulsio" class="section">
+        <h1>Суспензия и эмульсия</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">🌫</div>
+            <h3>Суспензия (Suspensio, Susp.)</h3>
+            <p>Жидкая лекарственная форма, представляющая собой <strong>взвесь частиц твёрдых лекарственных средств в жидкости</strong>. Всегда имеет осадок, перед применением суспензию нужно <strong>взбалтывать</strong>. Назначается внутрь, наружно или внутримышечно.</p>
+        </div>
+
+        <div class="lf-example static">
+            <p class="example-label">Выписывание суспензии</p>
+            <div class="lf-schema"><p><strong>Rp.:</strong> лекарственная форма, название ЛС, концентрация, объём → указание о выдаче → сигнатура</p></div>
+            <span class="rx-font">Rp.: Susp. Dexamethasoni 0,1% – 10 ml</span><br>
+            <span class="rx-font">D. S. Глазные капли</span>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">🥛</div>
+            <h3>Эмульсия (Emulsum)</h3>
+            <p>Однородная по внешнему виду жидкая лекарственная форма, состоящая из <strong>двух взаимонерастворимых жидкостей</strong> (масла и воды). Для приготовления применяются <strong>эмульгаторы</strong> — вещества, способствующие распределению масла в воде или воды в масле. Пример естественной эмульсии — <strong>молоко</strong>. Все эмульсии <strong>белого цвета</strong> и выглядят как молоко.</p>
+            <div class="etymology">Применяются: внутрь, наружно и в/м; для <strong>парентерального питания</strong> — в/в капельно; для <strong>наркоза</strong> — в/в.</div>
+        </div>
+
+        <div class="lf-example static">
+            <p class="example-label">Выписывание эмульсии</p>
+            <div class="lf-schema"><p><strong>Rp.:</strong> лекарственная форма, название ЛС, его количество, <strong>общий объём эмульсии</strong> → выдача → сигнатура</p></div>
+            <span class="rx-font">Rp.: Emulsi olei Ricini 20 ml – 100 ml</span><br>
+            <span class="rx-font">D. S. На приём</span>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: INFUSUM & DECOCTUM ===== -->
+    <section id="infusum" class="section">
+        <h1>Настои и отвары</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">🌿</div>
+            <h3>Настой (Infusum, Inf.) и отвар (Decoctum, Dec.)</h3>
+            <p>Жидкие лекарственные формы, представляющие собой <strong>водные извлечения из лекарственного растительного сырья</strong>.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚗️ Как готовят</h3>
+            <ul class="reg-list">
+                <li>Готовят при нагревании <strong>на водяной бане до 100 °C</strong> — в аптеке или домашних условиях.</li>
+                <li>Срок годности — <strong>не более 3 суток</strong>.</li>
+                <li>Соотношение сырья и воды — <strong>1 : 10</strong>; если сырьё содержит ЛС списка Б — <strong>1 : 400</strong>.</li>
+                <li>Назначаются внутрь ложками или наружно (промывания, полоскания, примочки), поэтому выписываются объёмом <strong>100 мл и более</strong>.</li>
+            </ul>
+        </div>
+
+        <div class="two-col">
+            <div class="info-chip">🌼 <strong>Настои</strong> — из мягких частей растения (лист, трава, цветки): кипятят 15 минут, настаивают 45 минут.</div>
+            <div class="info-chip">🌳 <strong>Отвары</strong> — из плотных частей (корень, кора, корневище): кипятят 45 минут, настаивают 10 минут.</div>
+        </div>
+
+        <div class="key-point">
+            <strong>Исключения, запомни:</strong> из листьев <em>брусники и толокнянки</em> готовят <strong>отвар</strong>; из корня <em>валерианы</em> готовят <strong>настой</strong>. При выписке в рецепте <strong>указывается часть растения</strong>.
+        </div>
+
+        <h3 class="sub-h2">Выписывание</h3>
+        <div class="two-col">
+            <div class="lf-example static example-col">
+                <p class="example-label">Настой</p>
+                <div class="lf-schema"><p><strong>Rp.:</strong> форма, сырьё (часть растения) + растение, количество сырья, объём</p></div>
+                <span class="rx-font">Rp.: Inf. herbae Leonuri 10,0 – 100 ml</span><br>
+                <span class="rx-font">D. S. По 1 столовой ложке 3 раза в сутки</span>
+            </div>
+            <div class="lf-example static example-col">
+                <p class="example-label">Отвар</p>
+                <span class="rx-font">Rp.: Dec. corticis Quercus 10,0 – 100 ml</span><br>
+                <span class="rx-font">D. S. Для полоскания рта</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📚 Части растений в именительном и родительном падеже</h3>
+            <div class="groups-grid">
+                <div class="group-card" style="--gc:#1a6e56;">
+                    <div class="group-icon">🌳</div>
+                    <h3>Кора</h3>
+                    <p><span class="rx-font">cortex — corticis</span></p>
+                </div>
+                <div class="group-card" style="--gc:#1a6e56;">
+                    <div class="group-icon">🥕</div>
+                    <h3>Корень</h3>
+                    <p><span class="rx-font">radix — radicis</span></p>
+                </div>
+                <div class="group-card" style="--gc:#1a6e56;">
+                    <div class="group-icon">🌾</div>
+                    <h3>Трава</h3>
+                    <p><span class="rx-font">herba — herbae</span></p>
+                </div>
+                <div class="group-card" style="--gc:#1a6e56;">
+                    <div class="group-icon">🍃</div>
+                    <h3>Лист</h3>
+                    <p><span class="rx-font">folium — foliorum</span> <em>(мн. число, родительный падеж)</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: TINCTURA & EXTRACTUM ===== -->
+    <section id="tinctura" class="section">
+        <h1>Настойки, экстракты, новогаленовые препараты</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">🍾</div>
+            <h3>Настойка (Tinctura, Tinct., T-rae)</h3>
+            <p>Жидкая лекарственная форма — <strong>спиртовое, водно-спиртовое или спирто-эфирное извлечение</strong> из лекарственного растительного сырья.</p>
+            <div class="etymology">Готовят на фармацевтических заводах <strong>без нагревания</strong>, срок годности — несколько лет. При выписке <strong>не указывается часть растения</strong>. Пациенту назначается <strong>каплями</strong>.</div>
+        </div>
+
+        <div class="lf-example static">
+            <p class="example-label">Выписывание настойки</p>
+            <div class="lf-schema"><p><strong>Rp.:</strong> форма, название лекарственного растения, объём настойки</p></div>
+            <span class="rx-font">Rp.: Tincturae Valerianae 30 ml</span><br>
+            <span class="rx-font">D. S. По 20 капель 3 раза в сутки</span>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">🧫</div>
+            <h3>Экстракт (Extractum, Extr.)</h3>
+            <p>Концентрированное извлечение из лекарственного растительного сырья. Бывают <strong>жидкие (fluidum)</strong>, <strong>густые (spissum)</strong>, <strong>сухие (siccum)</strong>.</p>
+            <div class="etymology">Как отдельные лекарственные формы используются <strong>только жидкие экстракты</strong> — густые и сухие входят в состав других ЛФ. Готовят на заводах без нагревания, срок годности — несколько лет. Часть растения не указывается, но <strong>указывается вид экстракта</strong>. Жидкие экстракты назначаются каплями.</div>
+        </div>
+
+        <div class="lf-example static">
+            <p class="example-label">Выписывание жидкого экстракта</p>
+            <div class="lf-schema"><p><strong>Rp.:</strong> форма, название растения, вид экстракта (fluidum), объём</p></div>
+            <span class="rx-font">Rp.: Extracti Frangulae fluidi 25 ml</span><br>
+            <span class="rx-font">D. S. 40 капель на ночь</span>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">⚡</div>
+            <h3>Новогаленовые препараты</h3>
+            <p>Извлечения из лекарственного растительного сырья, <strong>максимально освобождённые от балластных веществ</strong>. Пригодны не только для приёма внутрь, но и для <strong>инъекционного введения</strong>. При выписке в рецепте <strong>не указывается лекарственная форма</strong>.</p>
+        </div>
+
+        <div class="lf-example static">
+            <p class="example-label">Выписывание новогаленового препарата</p>
+            <div class="lf-schema"><p><strong>Rp.:</strong> название ЛС, объём</p></div>
+            <span class="rx-font">Rp.: Cordiamini 15 ml</span><br>
+            <span class="rx-font">D. S. По 15 капель 3 раза в сутки</span>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 5: OTHER LIQUID FORMS ===== -->
+    <section id="other-liquid" class="section">
+        <h1>Микстура, сироп, аэрозоль</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">🥤</div>
+            <h3>Микстура</h3>
+            <p>Жидкая лекарственная форма — <strong>смесь нескольких лекарственных форм</strong>, хотя бы одна из которых является жидкостью.</p>
+        </div>
+
+        <div class="lf-example static">
+            <p class="example-label">Выписывание микстуры</p>
+            <div class="lf-schema"><p><strong>Rp.:</strong> лекарственные формы на отдельных строках с указанием концентрации, объёма или дозы → <strong>указание о смешивании (M.)</strong> → выдача → сигнатура</p></div>
+            <span class="rx-font">Rp.: Sol. Natrii bromidi 2% – 200 ml</span><br>
+            <span class="rx-font">Coffeini-natrii benzoatis 1,0</span><br>
+            <span class="rx-font">Tincturae Valerianae 10 ml</span><br>
+            <span class="rx-font">M. D. S. По 1 столовой ложке 3 раза в сутки</span>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">🍯</div>
+            <h3>Сироп (Sirupus, Sir.)</h3>
+            <p>Концентрированный водный раствор сахара, содержащий лекарственное средство, консерванты, иногда красители, вкусовые и ароматические добавки. Содержание сахара — <strong>от 40% до 80%</strong>.</p>
+            <div class="etymology">Сиропы чаще используют <strong>для детей</strong>, а также добавляют в микстуры в качестве компонента, исправляющего вкус. Выпускаются на фармацевтических заводах, в рецепте выписываются <strong>сокращённым способом</strong>.</div>
+        </div>
+
+        <div class="lf-example static">
+            <p class="example-label">Выписывание сиропа</p>
+            <div class="lf-schema"><p><strong>Rp.:</strong> форма, название ЛС, концентрация, объём</p></div>
+            <span class="rx-font">Rp.: Sir. Acetaminopheni 2,4% – 120 ml</span><br>
+            <span class="rx-font">D. S. По 1 чайной ложке при лихорадке</span>
+        </div>
+
+        <div class="card definition-card">
+            <div class="card-icon">💨</div>
+            <h3>Аэрозоль (Aёrosolum, Aёr.)</h3>
+            <p>Дисперсная система, где <strong>дисперсионной средой является газ</strong> (смесь газов или воздух), а <strong>дисперсной фазой</strong> — чаще всего жидкость и редко мельчайшие частицы твёрдого средства.</p>
+            <div class="etymology">Используются для <strong>местного применения</strong> (на кожу и слизистые) и <strong>ингаляционно</strong>.</div>
+        </div>
+
+        <div class="two-col">
+            <div class="lf-example static example-col">
+                <p class="example-label">С концентрацией</p>
+                <div class="lf-schema"><p><strong>Rp.:</strong> форма, название ЛС, его количество</p></div>
+                <span class="rx-font">Rp.: Aёr. Isoprenalini sulfatis 1% – 25 ml</span><br>
+                <span class="rx-font">D. S. Ингаляционно</span>
+            </div>
+            <div class="lf-example static example-col">
+                <p class="example-label">С количеством доз</p>
+                <span class="rx-font">Rp.: Aёr. Troventoli 300 doses</span><br>
+                <span class="rx-font">D. S. Ингаляционно</span>
+                <span class="rx-font">Rp.: Aёr. Salbutamoli 10 ml (200 doses)</span><br>
+                <span class="rx-font">D. S. Ингаляционно</span>
+                <span class="rx-font">Rp.: Aёr. «Berodualum» № 2</span><br>
+                <span class="rx-font">D. S. Ингаляционно</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 6: INJECTIONS (general) ===== -->
+    <section id="injections" class="section">
+        <h1>Лекарственные формы для инъекций</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">💉</div>
+            <h3>Определение</h3>
+            <p>Это <strong>стерильные</strong> водные и неводные растворы, суспензии, эмульсии и <strong>сухие твёрдые лекарственные средства</strong>, которые растворяются в стерильном растворителе <strong>непосредственно перед введением</strong>.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏷 Упаковка и маркировка</h3>
+            <p>ЛФ для инъекций выпускаются в <strong>ампулах</strong> и <strong>флаконах</strong>. На них указываются: название ЛС, его доза в <strong>граммах или единицах действия</strong> (для твёрдых), <strong>концентрация и объём</strong> (для жидких), а также <strong>срок годности</strong>.</p>
+        </div>
+
+        <div class="card">
+            <h3>✅ Требования к ЛФ для инъекций</h3>
+            <div class="groups-grid">
+                <div class="group-card" style="--gc:#27ae60;"><div class="group-icon">🧫</div><h3>Стерильность</h3><p>Отсутствие микроорганизмов.</p></div>
+                <div class="group-card" style="--gc:#3498db;"><div class="group-icon">🔍</div><h3>Прозрачность</h3><p>Отсутствие видимых механических включений (для растворов).</p></div>
+                <div class="group-card" style="--gc:#e67e22;"><div class="group-icon">🌡</div><h3>Апирогенность</h3><p>Не должны повышать температуру у пациента.</p></div>
+                <div class="group-card" style="--gc:#8e44ad;"><div class="group-icon">🧪</div><h3>Безопасность</h3><p>Должны выдерживать испытание на токсичность.</p></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Методы стерилизации</h3>
+            <div class="groups-grid">
+                <div class="group-card" style="--gc:#16a085;"><div class="group-icon">♨️</div><h3>Термический</h3><p>Нагревание (сухой жар, пар).</p></div>
+                <div class="group-card" style="--gc:#2980b9;"><div class="group-icon">☀️</div><h3>УФ-лучи</h3><p>Ультрафиолетовое облучение.</p></div>
+                <div class="group-card" style="--gc:#f39c12;"><div class="group-icon">📡</div><h3>Ультразвуковой</h3><p>Воздействие ультразвуком.</p></div>
+                <div class="group-card" style="--gc:#c0392b;"><div class="group-icon">☢️</div><h3>Радиационный</h3><p>Ионизирующее излучение.</p></div>
+                <div class="group-card" style="--gc:#8e44ad;"><div class="group-icon">🫧</div><h3>Стерильная фильтрация</h3><p>Фильтрование через стерильные фильтры.</p></div>
+                <div class="group-card" style="--gc:#27ae60;"><div class="group-icon">🧪</div><h3>Химический</h3><p>Обработка химическими веществами.</p></div>
+            </div>
+        </div>
+
+        <div class="key-point">
+            <strong>Инфузионный раствор</strong> — раствор для инъекций объёмом <strong>100 мл и более</strong>, чаще вводится <strong>внутривенно капельно</strong>. При выписке в рецепте делается <strong>указание о стерилизации</strong>.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 7: IN AMPULLIS ===== -->
+    <section id="in-ampulla" class="section">
+        <h1>ЛФ для инъекций в ампулах</h1>
+
+        <h3 class="sub-h2">а) Водные растворы, суспензии, эмульсии</h3>
+        <div class="lf-example static">
+            <div class="lf-schema"><p><strong>Rp.:</strong> форма, название ЛС, концентрация, объём одной ампулы → <strong>указание о выдаче и количестве доз, отпуске в ампулах</strong> → сигнатура</p></div>
+            <span class="rx-font">Rp.: Sol. Aminophyllini 2,4% – 10 ml</span><br>
+            <span class="rx-font">D. t. d. № 10 in ampullis (amp.)</span><br>
+            <span class="rx-font">S. В вену (в/в) 10 мл</span>
+        </div>
+
+        <h3 class="sub-h2">б) Масляные растворы</h3>
+        <div class="lf-example static">
+            <div class="lf-schema"><p><strong>Rp.:</strong> форма, название ЛС, <strong>характер раствора</strong>, концентрация, объём одной ампулы</p></div>
+            <span class="rx-font">Rp.: Sol. Camphorae oleosae 20% – 2 ml</span><br>
+            <span class="rx-font">D. t. d. № 10 in ampullis (amp.)</span><br>
+            <span class="rx-font">S. Под кожу (п/к) 1 мл</span>
+        </div>
+
+        <h3 class="sub-h2">в) Порошки (сухие средства)</h3>
+        <div class="lf-example static">
+            <div class="lf-schema"><p><strong>Rp.:</strong> название ЛС, его доза → <strong>D. t. d. № … in ampullis</strong> → сигнатура</p></div>
+            <span class="rx-font">Rp.: Rifampicini 0,15</span><br>
+            <span class="rx-font">D. t. d. № 10 in ampullis (amp.)</span><br>
+            <span class="rx-font">S. В вену для капельного введения с 0,9% раствором натрия хлорида</span>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни схему ампул:</strong> форма + название + (характер раствора) + концентрация + объём одной ампулы → <code>D. t. d. № … in ampullis</code> → <code>S.</code>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 8: IN FLACONS ===== -->
+    <section id="in-flacon" class="section">
+        <h1>ЛФ для инъекций во флаконах</h1>
+
+        <h3 class="sub-h2">а) Водные растворы, суспензии, эмульсии</h3>
+        <div class="lf-example static">
+            <div class="lf-schema"><p><strong>Rp.:</strong> форма, название ЛС, концентрация, объём одного флакона → указание о выдаче и количестве доз → сигнатура</p></div>
+            <span class="rx-font">Rp.: Susp. Cortisoni acetatis 2,5% – 10 ml</span><br>
+            <span class="rx-font">D. t. d. № 10</span><br>
+            <span class="rx-font">S. Для внутримышечного (в/м) введения</span>
+        </div>
+
+        <h3 class="sub-h2">б) Масляные растворы</h3>
+        <div class="lf-example static">
+            <div class="lf-schema"><p><strong>Rp.:</strong> форма, название ЛС, <strong>характер раствора</strong>, концентрация, объём одного флакона</p></div>
+            <span class="rx-font">Rp.: Sol. Testosteroni oleosae 2,5% – 1 ml</span><br>
+            <span class="rx-font">D. t. d. № 10</span><br>
+            <span class="rx-font">S. В мышцу (в/м) 1 мл</span>
+        </div>
+
+        <h3 class="sub-h2">в) Порошки (сухие средства)</h3>
+        <div class="lf-example static">
+            <div class="lf-schema"><p><strong>Rp.:</strong> название ЛС, его доза в одном флаконе → указание о выдаче и количестве доз → сигнатура (способ применения, <strong>порядок разведения</strong>, характер растворителя)</p></div>
+            <span class="rx-font">Rp.: Ceftriaxoni 1,0</span><br>
+            <span class="rx-font">D. t. d. № 20</span><br>
+            <span class="rx-font">S. В мышцу (в/м) 2 раза в сутки в 5 мл 0,9% раствора натрия хлорида</span>
+            <span class="rx-font">Rp.: Bicillini 3 600 000 ED</span><br>
+            <span class="rx-font">D. t. d. № 10</span><br>
+            <span class="rx-font">S. В мышцу (в/м) по 600 000 ЕД 1 раз в неделю в 5 мл 0,9% раствора натрия хлорида</span>
+        </div>
+
+        <div class="key-point">
+            <strong>Запомни:</strong> ампулы и флаконы выписываются одинаково, <strong>отличие лишь в указании «in ampullis»</strong>. Во флаконах пишут просто <code>D. t. d. № …</code>.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 9: INFUSION ===== -->
+    <section id="infusion" class="section">
+        <h1>Инфузионные растворы</h1>
+
+        <div class="card definition-card">
+            <div class="card-icon">🫙</div>
+            <h3>Инфузионный раствор</h3>
+            <p>Раствор для инъекций объёмом <strong>100 мл и более</strong>, чаще вводится <strong>внутривенно капельно</strong>. При выписке в рецепте делается <strong>указание о стерилизации</strong>.</p>
+        </div>
+
+        <div class="lf-example static">
+            <p class="example-label">Выписывание инфузионного раствора</p>
+            <div class="lf-schema"><p><strong>Rp.:</strong> форма, название ЛС, концентрация, объём → <strong>указание о стерилизации</strong> → выдача → сигнатура</p></div>
+            <span class="rx-font">Rp.: Sol. Glucosi 5% – 400 ml</span><br>
+            <span class="rx-font"><strong>Sterilisetur!</strong></span><br>
+            <span class="rx-font">D. S. В вену капельно</span>
+        </div>
+
+        <div class="key-point">
+            <strong>Sterilisetur!</strong> = «да будет стерилизовано» — стандартное указание о стерилизации для инфузионных растворов.
+        </div>
+    </section>
+
+    <!-- ===== SECTION 10: QUIZ ===== -->
+    <section id="quiz" class="section">
+        <h1>Проверь себя</h1>
+        <p class="section-subtitle">Вопросы по лекции «Жидкие лекарственные формы. ЛФ для инъекций»</p>
+
+        <div class="quiz-progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span id="progressText">0 / 18</span>
+        </div>
+
+        <div id="quizContainer"></div>
+
+        <div class="quiz-result" id="quizResult" style="display:none;">
+            <h2 id="resultTitle"></h2>
+            <p id="resultText"></p>
+            <button class="btn-retry" onclick="resetQuiz()">Пройти ещё раз</button>
+        </div>
+
+        <button class="btn-check" id="btnCheck" onclick="checkAllAnswers()">Проверить все ответы</button>
+    </section>
+
+</main>
+
+<script src="lecture-3.js"></script>
+</body>
+</html>
